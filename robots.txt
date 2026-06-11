@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ricardomferreiraescritor-art.github.io/ricardo-ferreira-sovereign-decision-science/sitemap.xml

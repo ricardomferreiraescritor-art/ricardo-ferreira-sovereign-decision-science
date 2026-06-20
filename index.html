@@ -409,9 +409,26 @@ html,body{max-width:100%;overflow-x:hidden}body{font-size:17px}.section p,.book-
    document.documentElement.style.setProperty('--header-h',Math.ceil(header.getBoundingClientRect().height)+'px');
  }
 
- function routeFromHash(){
+ function hashState(){
    const h=(location.hash||'#home').slice(1).split('?')[0].trim();
-   return valid.has(h)?h:'home';
+
+   if(valid.has(h)){
+     return {route:h, anchor:null};
+   }
+
+   if(h){
+     const target=document.getElementById(h);
+     const page=target?target.closest('.page'):null;
+     if(page&&page.dataset&&valid.has(page.dataset.page)){
+       return {route:page.dataset.page, anchor:h};
+     }
+   }
+
+   return {route:'home', anchor:null};
+ }
+
+ function routeFromHash(){
+   return hashState().route;
  }
 
  function closeMenu(returnFocus){
@@ -423,7 +440,16 @@ html,body{max-width:100%;overflow-x:hidden}body{font-size:17px}.section p,.book-
    if(returnFocus)menu.focus();
  }
 
- function setActiveRoute(route, push){
+ function scrollToAnchor(anchor){
+   if(!anchor)return;
+   const target=document.getElementById(anchor);
+   if(!target)return;
+   const headerHeight=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h'),10)||0;
+   const top=target.getBoundingClientRect().top+window.pageYOffset-headerHeight-18;
+   window.scrollTo({top:Math.max(0,top),behavior:'smooth'});
+ }
+
+ function setActiveRoute(route, push, anchor){
    if(!valid.has(route))route='home';
 
    pages.forEach(page=>{
@@ -447,14 +473,18 @@ html,body{max-width:100%;overflow-x:hidden}body{font-size:17px}.section p,.book-
      : (titleNode?titleNode.textContent:'Official Platform')+' | Ricardo Manuel Machado Ferreira';
 
    if(push){
-     const targetHash='#'+route;
+     const targetHash='#'+(anchor||route);
      if(location.hash!==targetHash){
-       history.pushState({route:route},'',targetHash);
+       history.pushState({route:route,anchor:anchor||null},'',targetHash);
      }
    }
 
    closeMenu(false);
-   window.scrollTo({top:0,behavior:'auto'});
+   if(anchor){
+     setTimeout(function(){scrollToAnchor(anchor);},30);
+   }else{
+     window.scrollTo({top:0,behavior:'auto'});
+   }
  }
 
  syncHeaderHeight();
@@ -472,11 +502,13 @@ html,body{max-width:100%;overflow-x:hidden}body{font-size:17px}.section p,.book-
  });
 
  window.addEventListener('popstate',function(){
-   setActiveRoute(routeFromHash(),false);
+   const state=hashState();
+   setActiveRoute(state.route,false,state.anchor);
  });
 
  window.addEventListener('hashchange',function(){
-   setActiveRoute(routeFromHash(),false);
+   const state=hashState();
+   setActiveRoute(state.route,false,state.anchor);
  });
 
  if(menu&&siteNav){
@@ -563,7 +595,8 @@ html,body{max-width:100%;overflow-x:hidden}body{font-size:17px}.section p,.book-
    });
  }
 
- setActiveRoute(routeFromHash(),false);
+ const initialState=hashState();
+ setActiveRoute(initialState.route,false,initialState.anchor);
 })();
 </script>
 </body></html>

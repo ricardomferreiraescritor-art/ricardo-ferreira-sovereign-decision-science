@@ -168,6 +168,11 @@ html.translated-ltr body,html.translated-rtl body,body{top:0!important;position:
 .light .panel:hover :is(p,li,span,small,em),.light .contact-box:hover :is(p,li,span,small,em){color:#4b5563!important;-webkit-text-fill-color:#4b5563!important;}
 .formal-inquiry-section .contact-box form{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}.formal-inquiry-section .contact-box select,.formal-inquiry-section .contact-box textarea,.formal-inquiry-section .contact-box .check,.formal-inquiry-section .contact-box button{grid-column:1/-1}.journal-card .mini-link{margin-top:auto}.institutional-hero .lead,.journal-hero .lead{max-width:860px;}
 
+
+/* P100 STARTUP FAILSAFE — never allow a blank site while routing JS/translations load */
+body:not(.router-ready) #page-home{display:block!important;}
+body:not(.router-ready) .reveal{opacity:1!important;transform:none!important;}
+
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "Person", "name": "Ricardo Manuel Machado Ferreira", "email": "mailto:rmmferreira@netcabo.pt", "jobTitle": "Senior Procurement & Supply Chain Executive, Author, Creator of the Ferreira Doctrine and Architect of Sovereign Decision Science", "url": "https://ricardomferreiraescritor-art.github.io/ricardo-ferreira-sovereign-decision-science/", "sameAs": ["https://www.amazon.com/author/ricardomanuelmachadoferreira", "https://payhip.com/SovereignDecisionScience"]}
@@ -212,7 +217,7 @@ html,body{top:0!important;}
 </header>
 <main id="main">
 
-<section id="page-home" class="page" data-page="home">
+<section id="page-home" class="page active" data-page="home">
   <section class="cinema-hero">
     <div class="cinema-copy reveal">
       <p class="eyebrow">Decision Integrity · Procurement · Supply Sovereignty · Fiction</p>
@@ -1989,6 +1994,8 @@ html,body{top:0!important;}
   window.addEventListener('popstate',handleHash);
   if(menu){menu.addEventListener('click',()=>{const open=!navEl.classList.contains('open');navEl.classList.toggle('open',open);menu.setAttribute('aria-expanded',open?'true':'false');});}
   handleHash();
+  document.querySelectorAll('.page.active .reveal').forEach(el=>el.classList.add('in-view'));
+  document.body.classList.add('router-ready');
 
   const reveals=[...document.querySelectorAll('.reveal')];
   if('IntersectionObserver' in window){
@@ -2141,5 +2148,5 @@ html,body{top:0!important;}
 
 })();
 </script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script defer src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body></html>

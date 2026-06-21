@@ -238,6 +238,15 @@ html,body,body.translated-ltr,body.translated-rtl{top:0!important;margin-top:0!i
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "Person", "name": "Ricardo Manuel Machado Ferreira", "email": "mailto:rmmferreira@netcabo.pt", "jobTitle": "Senior Procurement & Supply Chain Executive, Author, Creator of the Ferreira Doctrine and Architect of Sovereign Decision Science", "url": "https://ricardomferreiraescritor-art.github.io/ricardo-ferreira-sovereign-decision-science/", "sameAs": ["https://www.amazon.com/author/ricardomanuelmachadoferreira", "https://payhip.com/SovereignDecisionScience"]}
 </script>
+
+<style id="p100-final-translation-hover-lock">
+html,body{top:0!important;margin-top:0!important;}
+body>.skiptranslate,iframe.goog-te-banner-frame,.goog-te-banner-frame,.goog-te-banner-frame.skiptranslate,.VIpgJd-ZVi9od-ORHb-OEVmcd,.VIpgJd-yAWNEb-L7lbkb,#goog-gt-tt,.goog-te-balloon-frame,.goog-tooltip,.goog-tooltip:hover,.goog-text-highlight{display:none!important;visibility:hidden!important;opacity:0!important;height:0!important;min-height:0!important;max-height:0!important;background:transparent!important;box-shadow:none!important;color:inherit!important;text-shadow:none!important;}
+#google_translate_element{position:absolute!important;left:-99999px!important;top:-99999px!important;width:1px!important;height:1px!important;overflow:hidden!important;opacity:0!important;pointer-events:none!important;}
+.product-card:hover,.book-card:hover,.portal-card:hover,.contact-box:hover,.editorial-copy:hover,.full-bleed-callout:hover,.custody-seal:hover,.conversion-gateway:hover,.subscription-panel:hover,.journal-card:hover,.route-card:hover,.story-card:hover{color:inherit!important;text-shadow:none!important;filter:none!important;}
+.product-card:hover *:not(.btn):not(.btn *),.book-card:hover *:not(.btn):not(.btn *),.portal-card:hover *:not(.btn):not(.btn *),.contact-box:hover *:not(.btn):not(.btn *),.editorial-copy:hover *:not(.btn):not(.btn *),.full-bleed-callout:hover *:not(.btn):not(.btn *),.custody-seal:hover *:not(.btn):not(.btn *),.conversion-gateway:hover *:not(.btn):not(.btn *),.subscription-panel:hover *:not(.btn):not(.btn *),.journal-card:hover *:not(.btn):not(.btn *),.route-card:hover *:not(.btn):not(.btn *),.story-card:hover *:not(.btn):not(.btn *){text-shadow:none!important;filter:none!important;background-image:none!important;}
+</style>
+
 </head>
 <body>
 <div id="google_translate_element" style="position:absolute;left:-9999px;top:-9999px;height:0;overflow:hidden"></div>
@@ -1990,7 +1999,7 @@ html,body,body.translated-ltr,body.translated-rtl{top:0!important;margin-top:0!i
     <div>
       <h3>Contact</h3>
       <a href="mailto:rmmferreira@netcabo.pt">rmmferreira@netcabo.pt</a>
-      <a class="linkedin-profile-link" href="https://www.linkedin.com/in/ricardo-manuel-machado-ferreira-a05a76299" target="_blank" rel="noopener" target="_blank" rel="noopener" aria-label="Visit Ricardo Manuel Machado Ferreira on LinkedIn"><span class="li-icon" aria-hidden="true">in</span><span>Visit LinkedIn profile</span></a>
+      <a class="linkedin-profile-link" href="https://www.linkedin.com/in/ricardo-manuel-machado-ferreira-a05a76299" target="_blank" rel="noopener" aria-label="Visit Ricardo Manuel Machado Ferreira on LinkedIn"><span class="li-icon" aria-hidden="true">in</span><span>Visit LinkedIn profile</span></a>
       <a href="#contact" data-route="contact">Formal inquiry</a>
       <a href="#privacy" data-route="privacy">Privacy</a>
       <a href="#terms" data-route="terms">Terms of Use</a>
@@ -2075,60 +2084,86 @@ html,body,body.translated-ltr,body.translated-rtl{top:0!important;margin-top:0!i
     });
   }
   document.querySelectorAll('#newsletter-form,.site-subscription-form').forEach(bindSubscriptionForm);
-  function eraseCookie(name){
-    const domains=['', location.hostname, '.github.io', '.ricardomferreiraescritor-art.github.io'];
-    const paths=['/','/ricardo-ferreira-sovereign-decision-science/'];
-    domains.forEach(domain=>paths.forEach(path=>{
-      document.cookie=name+'=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path='+path+(domain?';domain='+domain:'');
-    }));
-  }
-  function hideGoogleChrome(){
-    document.documentElement.style.top='0px';
-    document.body.style.top='0px';
-    document.body.style.position='static';
-    document.querySelectorAll('iframe.goog-te-banner-frame,.goog-te-banner-frame,.VIpgJd-ZVi9od-ORHb-OEVmcd,.goog-te-balloon-frame,#goog-gt-tt').forEach(el=>{
-      el.style.display='none'; el.style.visibility='hidden'; el.style.height='0'; el.style.width='0'; el.style.opacity='0';
-    });
-  }
-  setInterval(hideGoogleChrome,700);
-  function setActiveLang(lang){
-    document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
-  }
-  function applyLanguage(lang,attempt){
-    attempt=attempt||0;
-    setActiveLang(lang);
-    if(lang==='en'){
-      eraseCookie('googtrans');
-      location.reload();
-      return;
-    }
-    const combo=document.querySelector('.goog-te-combo');
-    if(combo){
-      combo.value=lang;
-      combo.dispatchEvent(new Event('change',{bubbles:true}));
-      setTimeout(hideGoogleChrome,120);
-      setTimeout(hideGoogleChrome,900);
-      return;
-    }
-    if(attempt<30){
-      setTimeout(()=>applyLanguage(lang,attempt+1),250);
-    }
-  }
-  document.querySelectorAll('.lang-btn').forEach(btn=>btn.addEventListener('click',function(e){
-    e.preventDefault();
-    applyLanguage(this.dataset.lang,0);
-  }));
+  /* P100 language selector — stable in-site Google Translate mode
+     Uses Google Translate Element cookies and reloads the SAME github.io page.
+     It keeps visitors on the same site and does not open a new tab. */
   window.googleTranslateElementInit=function(){
     if(window.google&&google.translate){
       new google.translate.TranslateElement({
         pageLanguage:'en',
-        includedLanguages:'pt,fr,de,en',
-        autoDisplay:false,
-        layout:google.translate.TranslateElement.InlineLayout.SIMPLE
+        includedLanguages:'pt,en,fr,de',
+        autoDisplay:false
       },'google_translate_element');
       hideGoogleChrome();
     }
   };
+  function hideGoogleChrome(){
+    document.documentElement.style.top='0px';
+    document.body.style.top='0px';
+    document.body.style.marginTop='0px';
+    document.querySelectorAll('iframe.goog-te-banner-frame,.goog-te-banner-frame,.VIpgJd-ZVi9od-ORHb-OEVmcd,.goog-te-balloon-frame,#goog-gt-tt,.goog-tooltip,.goog-tooltip:hover,.goog-text-highlight').forEach(function(el){
+      el.style.display='none';
+      el.style.visibility='hidden';
+      el.style.height='0';
+      el.style.width='0';
+      el.style.opacity='0';
+      el.style.background='transparent';
+      el.style.boxShadow='none';
+    });
+  }
+  setInterval(hideGoogleChrome,500);
+  function setTranslateCookie(value){
+    var expired='Thu, 01 Jan 1970 00:00:00 GMT';
+    var expires=new Date(Date.now()+365*24*60*60*1000).toUTCString();
+    var paths=['/','/ricardo-ferreira-sovereign-decision-science/'];
+    var domains=['',';domain='+location.hostname,';domain=.'+location.hostname];
+    paths.forEach(function(path){
+      domains.forEach(function(domain){
+        document.cookie='googtrans=; expires='+expired+'; path='+path+domain;
+        if(value){
+          document.cookie='googtrans='+value+'; expires='+expires+'; path='+path+domain+'; SameSite=Lax';
+        }
+      });
+    });
+  }
+  function currentLangFromCookie(){
+    var current='en';
+    var match=document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
+    if(match){
+      var value=decodeURIComponent(match[1]);
+      if(value.indexOf('/en/')===0){current=value.split('/').pop()||'en';}
+    }
+    return current;
+  }
+  function markActiveLanguage(){
+    var current=currentLangFromCookie();
+    document.querySelectorAll('.lang-btn').forEach(function(btn){
+      btn.classList.toggle('active',btn.dataset.lang===current);
+    });
+  }
+  function setSiteLanguage(lang){
+    if(lang==='en'){
+      setTranslateCookie('');
+      try{localStorage.setItem('siteLanguage','en');}catch(e){}
+      window.location.href=location.pathname+location.search+location.hash;
+      window.location.reload();
+      return;
+    }
+    setTranslateCookie('/en/'+lang);
+    try{localStorage.setItem('siteLanguage',lang);}catch(e){}
+    window.location.href=location.pathname+location.search+location.hash;
+    window.location.reload();
+  }
+  document.querySelectorAll('.lang-btn').forEach(function(btn){
+    btn.addEventListener('click',function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      setSiteLanguage(this.dataset.lang);
+    });
+  });
+  document.addEventListener('DOMContentLoaded',markActiveLanguage);
+  markActiveLanguage();
+  hideGoogleChrome();
 
 })();
 </script>

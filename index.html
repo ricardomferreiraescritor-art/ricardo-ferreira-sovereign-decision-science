@@ -172,6 +172,12 @@ html.translated-ltr body,html.translated-rtl body,body{top:0!important;position:
 /* P100 STARTUP FAILSAFE — never allow a blank site while routing JS/translations load */
 body:not(.router-ready) #page-home{display:block!important;}
 
+
+
+/* EMERGENCY LIVE FIX — prevent blank body if JS/translation is slow */
+.page.active .reveal, .reveal.in-view{opacity:1!important;transform:none!important;}
+.cinema-copy.reveal, .cinema-visual.reveal{opacity:1!important;transform:none!important;}
+
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "Person", "name": "Ricardo Manuel Machado Ferreira", "email": "mailto:rmmferreira@netcabo.pt", "jobTitle": "Senior Procurement & Supply Chain Executive, Author, Creator of the Ferreira Doctrine and Architect of Sovereign Decision Science", "url": "https://ricardomferreiraescritor-art.github.io/ricardo-ferreira-sovereign-decision-science/", "sameAs": ["https://www.amazon.com/author/ricardomanuelmachadoferreira", "https://payhip.com/SovereignDecisionScience"]}
@@ -2239,10 +2245,13 @@ html,body{top:0!important;}
   });
   resetLanguageLabels();
   setActiveLanguage(readGoogTransLang());
+  /* EMERGENCY LIVE FIX — removed recursive MutationObserver/setInterval loop that could freeze the page. */
   const switcher=document.querySelector('.language-switcher');
-  if(switcher){new MutationObserver(()=>{resetLanguageLabels();hideTranslateChrome();}).observe(switcher,{childList:true,subtree:true,characterData:true});}
+  resetLanguageLabels();
   hideTranslateChrome();
-  setInterval(hideTranslateChrome,1200);
+  setTimeout(hideTranslateChrome,500);
+  setTimeout(hideTranslateChrome,1500);
+  setTimeout(hideTranslateChrome,3000);
 
 })();
 </script>

@@ -110,6 +110,12 @@ input,select,textarea{width:100%;padding:.82rem;background:#06101d;border:1px so
 .footer-columns{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
 .footer-columns h3{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:#fff}.footer-columns a{display:block;text-decoration:none;color:#c1ccd9;margin:.45rem 0;font-size:.9rem}.footer-columns a:hover{color:var(--gold2)}
 .footer-bottom{display:flex;justify-content:space-between;gap:1rem;color:#8e9aab;font-size:.75rem;margin-top:2rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.1)}
+.footer-social{display:flex;align-items:center;gap:.7rem;margin-top:.9rem}
+.linkedin-profile-link{display:inline-flex!important;align-items:center;gap:.55rem;color:#c1ccd9!important;text-decoration:none!important}
+.linkedin-profile-link .li-icon{width:30px;height:30px;border:1px solid rgba(214,173,84,.55);border-radius:6px;display:inline-grid;place-items:center;font-family:Arial,sans-serif;font-weight:900;font-size:.82rem;letter-spacing:-.04em;color:#06101d;background:var(--gold2);box-shadow:0 8px 20px rgba(0,0,0,.28)}
+.linkedin-profile-link:hover{color:var(--gold2)!important}
+.linkedin-profile-link:hover .li-icon{filter:brightness(1.08);transform:translateY(-1px)}
+
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}.reveal.in-view{opacity:1;transform:none}
 .image-placeholder{min-height:180px;display:grid;place-items:center;border:1px solid var(--line);color:var(--gold2);padding:1rem;text-align:center}
 @media(max-width:1200px){.site-nav{display:none}.menu-toggle{display:block}.site-nav.open{display:flex;position:absolute;top:var(--header-h);left:0;right:0;background:#06101d;flex-direction:column;align-items:stretch;padding:1rem}.cinema-hero,.editorial{grid-template-columns:1fr}.collection-grid,.books-grid{grid-template-columns:repeat(2,1fr)}.bundle-grid{grid-template-columns:1fr 1fr}.licensing-grid,.quad-grid{grid-template-columns:repeat(2,1fr)}}
@@ -1787,6 +1793,7 @@ input,select,textarea{width:100%;padding:.82rem;background:#06101d;border:1px so
     <div>
       <h3>Contact</h3>
       <a href="mailto:rmmferreira@netcabo.pt">rmmferreira@netcabo.pt</a>
+      <a class="linkedin-profile-link" href="https://www.linkedin.com/in/ricardo-manuel-machado-ferreira-a05a76299" target="_blank" rel="noopener" aria-label="Visit Ricardo Manuel Machado Ferreira on LinkedIn"><span class="li-icon" aria-hidden="true">in</span><span>Visit LinkedIn profile</span></a>
       <a href="#contact" data-route="contact">Formal inquiry</a>
       <a href="#privacy" data-route="privacy">Privacy</a>
       <a href="#terms" data-route="terms">Terms of Use</a>

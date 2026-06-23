@@ -208,6 +208,130 @@ body:not(.router-ready) #page-home{display:block!important;}
 @media(max-width:1000px){.enterprise-grid,.contract-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.enterprise-software-panel,.contract-control-panel,.pre-admission-panel{margin:2.5rem 1rem;}}
 @media(max-width:620px){.enterprise-grid,.contract-grid{grid-template-columns:1fr;}}
 
+
+/* P100 COMMERCIAL STORE EXECUTION — Start Here, buyer paths, premium review merchandising */
+.store-guidance{
+  max-width:var(--max);
+  margin:3rem auto 2rem;
+  padding:clamp(1.45rem,3vw,3rem);
+  border:1px solid rgba(214,173,84,.42);
+  background:linear-gradient(135deg,rgba(214,173,84,.10),rgba(255,255,255,.035));
+  box-shadow:var(--shadow);
+}
+.store-guidance h2{
+  font-family:Georgia,serif;
+  font-size:clamp(2rem,3.6vw,4.8rem);
+  line-height:1.03;
+  margin:.2rem 0 1rem;
+  font-weight:500;
+  letter-spacing:-.035em;
+}
+.store-guidance p{color:#b8c4d2;max-width:980px}
+.buyer-journey-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:.9rem;
+  margin-top:1.35rem;
+}
+.buyer-journey-card{
+  border:1px solid rgba(255,255,255,.16);
+  background:rgba(255,255,255,.038);
+  padding:1.15rem;
+  display:flex;
+  flex-direction:column;
+  min-height:235px;
+}
+.buyer-journey-card.gold{
+  border-color:rgba(214,173,84,.68);
+  background:linear-gradient(180deg,rgba(214,173,84,.12),rgba(255,255,255,.035));
+}
+.buyer-journey-card strong{
+  display:block;
+  color:#f5d98b;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:.7rem;
+  margin-bottom:.4rem;
+}
+.buyer-journey-card h3{
+  font-family:Georgia,serif;
+  font-size:1.55rem;
+  line-height:1.12;
+  margin:.1rem 0 .6rem;
+  font-weight:500;
+  color:#f4efe2;
+}
+.buyer-journey-card p{font-size:.9rem;color:#b8c4d2}
+.buyer-journey-card .btn{margin-top:auto}
+.store-jump a[href="#store-start-here"]{
+  background:rgba(214,173,84,.16);
+  color:var(--gold2);
+  border-color:rgba(214,173,84,.4);
+}
+.store-badge{
+  display:inline-flex!important;
+  align-self:flex-start;
+  width:auto!important;
+  padding:.34rem .58rem;
+  border:1px solid rgba(214,173,84,.58);
+  background:rgba(214,173,84,.12)!important;
+  color:#f5d98b!important;
+  font-size:.68rem!important;
+  line-height:1.2!important;
+  font-weight:900!important;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin:.15rem 0 .65rem!important;
+}
+.buyer-notes{
+  border-top:1px solid rgba(255,255,255,.13);
+  border-bottom:1px solid rgba(255,255,255,.08);
+  margin:.75rem 0 .85rem;
+  padding:.75rem 0 .2rem;
+}
+.buyer-notes p{
+  margin:.25rem 0!important;
+  font-size:.82rem!important;
+  color:#c4cfdc!important;
+}
+.buyer-notes strong{
+  color:#f5d98b!important;
+  font-weight:900;
+}
+.rights-short{
+  font-size:.76rem!important;
+  color:#95a3b5!important;
+  margin-top:.65rem!important;
+}
+.premium-review-detail-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:.75rem;
+  margin:1.1rem 0 1.6rem;
+}
+.premium-review-detail-grid article{
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.032);
+  padding:1rem;
+}
+.premium-review-detail-grid h3{
+  color:#f5d98b;
+  text-transform:uppercase;
+  font-size:.72rem;
+  letter-spacing:.12em;
+  margin:.1rem 0 .45rem;
+}
+.premium-review-detail-grid p{
+  color:#b8c4d2;
+  font-size:.84rem;
+  margin:0;
+}
+.product-card:hover .store-badge{color:#f5d98b!important;-webkit-text-fill-color:#f5d98b!important;background:rgba(214,173,84,.12)!important;}
+.product-card:hover .buyer-notes p,.product-card:hover .rights-short{color:#c4cfdc!important;-webkit-text-fill-color:#c4cfdc!important;}
+.product-card:hover .buyer-notes strong{color:#f5d98b!important;-webkit-text-fill-color:#f5d98b!important;}
+@media(max-width:1200px){.buyer-journey-grid{grid-template-columns:1fr 1fr}.premium-review-detail-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.buyer-journey-grid,.premium-review-detail-grid{grid-template-columns:1fr}}
+
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "Person", "name": "Ricardo Manuel Machado Ferreira", "email": "mailto:rmmferreira@netcabo.pt", "jobTitle": "Senior Procurement & Supply Chain Executive, Author, Creator of the Ferreira Doctrine and Architect of Sovereign Decision Science", "url": "https://ricardomferreiraescritor-art.github.io/ricardo-ferreira-sovereign-decision-science/", "sameAs": ["https://www.amazon.com/author/ricardomanuelmachadoferreira", "https://payhip.com/SovereignDecisionScience"]}
@@ -614,7 +738,14 @@ main [style*="text-shadow"]:hover {
       <div class="product-copy">
         <p class="kicker">Decision Integrity</p>
         <h3>The Hormuz Decision Test™</h3>
-        <p>A public-layer executive briefing applying decision governance to disruption.</p>
+        <p>A public-layer executive briefing applying decision governance to geopolitical and supply disruption.</p>
+        <div class="buyer-notes">
+          <p><strong>For:</strong> procurement, supply chain, energy, logistics, contract and executive decision-makers.</p>
+          <p><strong>Use when:</strong> external disruption may become internal contract, supplier, freight, energy or continuity exposure.</p>
+          <p><strong>Helps you see:</strong> decision readiness, contract sensitivity, supplier exposure, executive accountability and consequence timing.</p>
+          <p><strong>Next step:</strong> pair with WHEN HORMUZ MOVES, EVERY CONTRACT MOVES or request Premium Written Review for a live case.</p>
+        </div>
+        <p class="rights-short">Public written product. Institutional use, training, software, AI/LLM ingestion, workflows and deployment require written licensing.</p>
         <p class="price">€19.90</p>
         <a class="btn btn-gold" href="https://payhip.com/b/uOxYP" target="_blank" rel="noopener">Buy on Payhip</a>
       </div>
@@ -625,6 +756,13 @@ main [style*="text-shadow"]:hover {
         <p class="kicker">Energy Shock</p>
         <h3>WHEN HORMUZ MOVES, EVERY CONTRACT MOVES</h3>
         <p>A public-layer briefing on energy shock, freight inflation and supplier exposure.</p>
+        <div class="buyer-notes">
+          <p><strong>For:</strong> contract owners, procurement leaders, supply-chain teams, finance and risk functions.</p>
+          <p><strong>Use when:</strong> energy shock or freight inflation may move into pricing, delivery, service and contract assumptions.</p>
+          <p><strong>Helps you see:</strong> supplier exposure, contract vulnerability, inflation pressure and operational consequence.</p>
+          <p><strong>Next step:</strong> move to The Hormuz Decision Test™ or the Procurement Exposure Starter Bundle.</p>
+        </div>
+        <p class="rights-short">Public written product. Institutional use, training, software, AI/LLM ingestion, workflows and deployment require written licensing.</p>
         <p class="price">€9.90</p>
         <a class="btn btn-gold" href="https://payhip.com/b/PSO5A" target="_blank" rel="noopener">Buy on Payhip</a>
       </div>
@@ -637,16 +775,31 @@ main [style*="text-shadow"]:hover {
         <p class="kicker">Critical Event Briefing</p>
         <h3>Decision Integrity Exposure Brief™ — When One Update Stops the World</h3>
         <p>A public-layer executive case brief on critical supplier, software and decision exposure.</p>
+        <div class="buyer-notes">
+          <p><strong>For:</strong> executives, procurement leaders, technology owners, risk managers and continuity teams.</p>
+          <p><strong>Use when:</strong> one update, one supplier or one platform interruption can stop operations across the organisation.</p>
+          <p><strong>Helps you see:</strong> software dependency, decision accountability, supplier concentration, evidence gaps and defensibility exposure.</p>
+          <p><strong>Next step:</strong> move to The 72-Hour Decision Readiness Test or Premium Written Review for a concrete live exposure.</p>
+        </div>
+        <p class="rights-short">Public written product. Institutional use, training, software, AI/LLM ingestion, workflows and deployment require written licensing.</p>
         <p class="price">€12.90</p>
         <a class="btn btn-gold" href="https://payhip.com/b/gto3s" target="_blank" rel="noopener">Buy on Payhip</a>
       </div>
     </article>
-    <article class="product-card  reveal">
+    <article class="product-card product-card-featured reveal">
       <a class="product-img" href="https://payhip.com/b/uc1Kf" target="_blank" rel="noopener"><img src="assets/img_020_8366897373548663.webp" alt="THE EMERGENCY BUYING RISK BRIEF" loading="lazy" decoding="async" class=""></a>
       <div class="product-copy">
         <p class="kicker">Emergency Buying</p>
         <h3>THE EMERGENCY BUYING RISK BRIEF</h3>
+        <p class="store-badge">Best first purchase · Start here</p>
         <p>Emergency procurement can solve an immediate need while creating future exposure.</p>
+        <div class="buyer-notes">
+          <p><strong>For:</strong> procurement, supply chain, operations, contracts and risk professionals.</p>
+          <p><strong>Use when:</strong> urgent purchasing is being used to solve today’s pressure but tomorrow’s exposure is unclear.</p>
+          <p><strong>Helps you see:</strong> decision exposure, hidden assumptions, rushed ownership, supplier dependence and future consequence.</p>
+          <p><strong>Next step:</strong> move to the Procurement Exposure Starter Bundle or request Premium Written Review if the situation is live.</p>
+        </div>
+        <p class="rights-short">Public written product. Institutional use, training, software, AI/LLM ingestion, workflows and deployment require written licensing.</p>
         <p class="price">€7.90</p>
         <a class="btn btn-gold" href="https://payhip.com/b/uc1Kf" target="_blank" rel="noopener">Buy on Payhip</a>
       </div>
@@ -659,7 +812,7 @@ main [style*="text-shadow"]:hover {
     <p class="eyebrow">Canonical Custody Seal</p>
     <h2>Identifier: SHA-256 (PAYLOAD_CANON_181)</h2>
     <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-    <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+    <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
   </div>
 </section>
 </section>
@@ -753,7 +906,7 @@ main [style*="text-shadow"]:hover {
     <p class="eyebrow">Canonical Custody Seal</p>
     <h2>Identifier: SHA-256 (PAYLOAD_CANON_181)</h2>
     <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-    <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+    <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
   </div>
 </section>
 </section>
@@ -869,7 +1022,7 @@ main [style*="text-shadow"]:hover {
     <p class="eyebrow">Canonical Custody Seal</p>
     <h2>Identifier: SHA-256 (PAYLOAD_CANON_181)</h2>
     <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-    <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+    <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
   </div>
 </section>
 </section>
@@ -994,7 +1147,7 @@ main [style*="text-shadow"]:hover {
     <p class="eyebrow">Canonical Custody Seal</p>
     <h2>Identifier: SHA-256 (PAYLOAD_CANON_181)</h2>
     <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-    <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+    <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
   </div>
 </section>
 </section>
@@ -1074,7 +1227,7 @@ main [style*="text-shadow"]:hover {
     <p class="eyebrow">Canonical Custody Seal</p>
     <h2>Identifier: SHA-256 (PAYLOAD_CANON_181)</h2>
     <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-    <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+    <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
   </div>
 </section>
 </section>
@@ -1154,7 +1307,7 @@ main [style*="text-shadow"]:hover {
     <p class="eyebrow">Canonical Custody Seal</p>
     <h2>Identifier: SHA-256 (PAYLOAD_CANON_181)</h2>
     <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-    <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+    <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
   </div>
 </section>
 </section>
@@ -1214,7 +1367,7 @@ main [style*="text-shadow"]:hover {
     <p class="eyebrow">Canonical custody</p>
     <h2>Identifier: SHA-256 (PAYLOAD_CANON_181)</h2>
     <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-    <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+    <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
   </section>
 </section>
 <section id="page-store" class="page store-page" data-page="store">
@@ -1224,9 +1377,9 @@ main [style*="text-shadow"]:hover {
       <h1 id="store-title">The official commercial world of Sovereign Decision Science™.</h1>
       <p class="lead">This is not a catalogue of isolated PDFs. It is the public access layer of Ricardo Manuel Machado Ferreira’s protected decision-governance ecosystem.</p>
       <div class="hero-actions">
-        <a class="btn btn-gold" href="#shift-bundles">Explore the Shift Series</a>
+        <a class="btn btn-gold" href="#store-start-here">Start here</a>
         <a class="btn btn-gold" href="#premium-review">Premium written review</a>
-        <a class="btn btn-outline" href="#store-licensing-path">Licensing path</a>
+        <a class="btn btn-outline" href="#public-entry-products">Entry products</a>
       </div>
     </div>
     <figure class="cinema-visual reveal">
@@ -1235,14 +1388,42 @@ main [style*="text-shadow"]:hover {
   </section>
   <div class="lexbar"><div class="lextrack">Ferreira Doctrine™ · Sovereign Decision Science™ · Decision Defensibility · Public Layer · Supplier Exposure · Contract Discipline · Board Scrutiny · Institutional Licensing · Formal Written Engagement · Premium Written Review · Ferreira Doctrine™ · Sovereign Decision Science™ · Decision Defensibility · Public Layer · Supplier Exposure · Contract Discipline · Board Scrutiny · Institutional Licensing · Formal Written Engagement · Premium Written Review · Ferreira Doctrine™ · Sovereign Decision Science™ · Decision Defensibility · Public Layer · Supplier Exposure · Contract Discipline · Board Scrutiny · Institutional Licensing · Formal Written Engagement · Premium Written Review · Ferreira Doctrine™ · Sovereign Decision Science™ · Decision Defensibility · Public Layer · Supplier Exposure · Contract Discipline · Board Scrutiny · Institutional Licensing · Formal Written Engagement · Premium Written Review · </div></div>
   <nav class="store-jump reveal" aria-label="Store sections">
-    <a href="#store-books">Books</a>
-    <a href="#shift-bundles">Shift Bundles</a>
-    <a href="#individual-shift-briefings">Briefings</a>
+    <a href="#store-start-here">Start Here</a>
     <a href="#public-entry-products">Entry Products</a>
     <a href="#premium-review">Premium Review</a>
+    <a href="#shift-bundles">Bundles</a>
+    <a href="#individual-shift-briefings">Shift Series</a>
+    <a href="#store-books">Books</a>
     <a href="#store-licensing-path">Licensing</a>
   </nav>
-  
+
+  <section id="store-start-here" class="store-guidance reveal" aria-label="Start here commercial route">
+    <p class="eyebrow">Start Here · First Buyer Path</p>
+    <h2>Start with exposure. Move to written review. License only when implementation is required.</h2>
+    <p><strong>Public products help you see the exposure. Premium written review helps you examine it. Institutional licensing defines the authorised path to implementation.</strong></p>
+    <p>This store is organised to reduce friction for a first-time buyer: begin with a focused public briefing, move into current exposure products or bundles, and request premium written review only when a concrete decision, supplier, contract or governance situation requires written examination.</p>
+    <div class="buyer-journey-grid">
+      <article class="buyer-journey-card gold">
+        <strong>Best first purchase</strong>
+        <h3>THE EMERGENCY BUYING RISK BRIEF — €7.90</h3>
+        <p>Use this as the lowest-friction entry point if you work in procurement, supply chain, contracts, operations or risk and want to understand how urgent buying can create future exposure.</p>
+        <a class="btn btn-gold" href="https://payhip.com/b/uc1Kf" target="_blank" rel="noopener">Start with this briefing</a>
+      </article>
+      <article class="buyer-journey-card">
+        <strong>Current exposure briefings</strong>
+        <h3>Hormuz · CrowdStrike · Supplier Delays</h3>
+        <p>For market disruption, technology interruption, energy shock, freight inflation, supplier delays and decision exposure before consequence appears.</p>
+        <a class="btn btn-outline" href="#public-entry-products">Explore current exposure</a>
+      </article>
+      <article class="buyer-journey-card">
+        <strong>Premium bridge</strong>
+        <h3>Executive Decision Defensibility Review — €2,500</h3>
+        <p>For one concrete procurement, supplier, contract, continuity, governance or decision-exposure situation requiring priority written executive assessment within 5 business days.</p>
+        <a class="btn btn-outline" href="#premium-review">Request premium review</a>
+      </article>
+    </div>
+  </section>
+
   <section class="section-narrow">
     <div class="section-head reveal">
       <p class="eyebrow">Explore</p>
@@ -1550,8 +1731,8 @@ main [style*="text-shadow"]:hover {
   <section class="collection dark" id="public-entry-products">
     <div class="section-head reveal">
       <p class="eyebrow">Start Here</p>
-      <h2>Public entry products and practical tools</h2>
-      <p>Lower-friction public-layer products for readers who want a first point of contact with decision exposure, emergency buying, hidden cost, delivery risk and procurement consequence.</p>
+      <h2>Public entry products organised by buying trigger.</h2>
+      <p>Start with one focused exposure. Use the briefings below to enter through emergency buying, geopolitical disruption, technology interruption, supplier delay, hidden cost, decision readiness or public decision records.</p>
     </div>
     <div class="collection-grid product-grid">
     <article class="product-card  reveal">
@@ -1559,7 +1740,14 @@ main [style*="text-shadow"]:hover {
       <div class="product-copy">
         <p class="kicker">Decision Integrity</p>
         <h3>The Hormuz Decision Test™</h3>
-        <p>A public-layer executive briefing applying decision governance to disruption.</p>
+        <p>A public-layer executive briefing applying decision governance to geopolitical and supply disruption.</p>
+        <div class="buyer-notes">
+          <p><strong>For:</strong> procurement, supply chain, energy, logistics, contract and executive decision-makers.</p>
+          <p><strong>Use when:</strong> external disruption may become internal contract, supplier, freight, energy or continuity exposure.</p>
+          <p><strong>Helps you see:</strong> decision readiness, contract sensitivity, supplier exposure, executive accountability and consequence timing.</p>
+          <p><strong>Next step:</strong> pair with WHEN HORMUZ MOVES, EVERY CONTRACT MOVES or request Premium Written Review for a live case.</p>
+        </div>
+        <p class="rights-short">Public written product. Institutional use, training, software, AI/LLM ingestion, workflows and deployment require written licensing.</p>
         <p class="price">€19.90</p>
         <a class="btn btn-gold" href="https://payhip.com/b/uOxYP" target="_blank" rel="noopener">Buy on Payhip</a>
       </div>
@@ -1570,6 +1758,13 @@ main [style*="text-shadow"]:hover {
         <p class="kicker">Energy Shock</p>
         <h3>WHEN HORMUZ MOVES, EVERY CONTRACT MOVES</h3>
         <p>A public-layer briefing on energy shock, freight inflation and supplier exposure.</p>
+        <div class="buyer-notes">
+          <p><strong>For:</strong> contract owners, procurement leaders, supply-chain teams, finance and risk functions.</p>
+          <p><strong>Use when:</strong> energy shock or freight inflation may move into pricing, delivery, service and contract assumptions.</p>
+          <p><strong>Helps you see:</strong> supplier exposure, contract vulnerability, inflation pressure and operational consequence.</p>
+          <p><strong>Next step:</strong> move to The Hormuz Decision Test™ or the Procurement Exposure Starter Bundle.</p>
+        </div>
+        <p class="rights-short">Public written product. Institutional use, training, software, AI/LLM ingestion, workflows and deployment require written licensing.</p>
         <p class="price">€9.90</p>
         <a class="btn btn-gold" href="https://payhip.com/b/PSO5A" target="_blank" rel="noopener">Buy on Payhip</a>
       </div>
@@ -1582,16 +1777,31 @@ main [style*="text-shadow"]:hover {
         <p class="kicker">Critical Event Briefing</p>
         <h3>Decision Integrity Exposure Brief™ — When One Update Stops the World</h3>
         <p>A public-layer executive case brief on critical supplier, software and decision exposure.</p>
+        <div class="buyer-notes">
+          <p><strong>For:</strong> executives, procurement leaders, technology owners, risk managers and continuity teams.</p>
+          <p><strong>Use when:</strong> one update, one supplier or one platform interruption can stop operations across the organisation.</p>
+          <p><strong>Helps you see:</strong> software dependency, decision accountability, supplier concentration, evidence gaps and defensibility exposure.</p>
+          <p><strong>Next step:</strong> move to The 72-Hour Decision Readiness Test or Premium Written Review for a concrete live exposure.</p>
+        </div>
+        <p class="rights-short">Public written product. Institutional use, training, software, AI/LLM ingestion, workflows and deployment require written licensing.</p>
         <p class="price">€12.90</p>
         <a class="btn btn-gold" href="https://payhip.com/b/gto3s" target="_blank" rel="noopener">Buy on Payhip</a>
       </div>
     </article>
-    <article class="product-card  reveal">
+    <article class="product-card product-card-featured reveal">
       <a class="product-img" href="https://payhip.com/b/uc1Kf" target="_blank" rel="noopener"><img src="assets/img_020_8366897373548663.webp" alt="THE EMERGENCY BUYING RISK BRIEF" loading="lazy" decoding="async" class=""></a>
       <div class="product-copy">
         <p class="kicker">Emergency Buying</p>
         <h3>THE EMERGENCY BUYING RISK BRIEF</h3>
+        <p class="store-badge">Best first purchase · Start here</p>
         <p>Emergency procurement can solve an immediate need while creating future exposure.</p>
+        <div class="buyer-notes">
+          <p><strong>For:</strong> procurement, supply chain, operations, contracts and risk professionals.</p>
+          <p><strong>Use when:</strong> urgent purchasing is being used to solve today’s pressure but tomorrow’s exposure is unclear.</p>
+          <p><strong>Helps you see:</strong> decision exposure, hidden assumptions, rushed ownership, supplier dependence and future consequence.</p>
+          <p><strong>Next step:</strong> move to the Procurement Exposure Starter Bundle or request Premium Written Review if the situation is live.</p>
+        </div>
+        <p class="rights-short">Public written product. Institutional use, training, software, AI/LLM ingestion, workflows and deployment require written licensing.</p>
         <p class="price">€7.90</p>
         <a class="btn btn-gold" href="https://payhip.com/b/uc1Kf" target="_blank" rel="noopener">Buy on Payhip</a>
       </div>
@@ -1602,6 +1812,13 @@ main [style*="text-shadow"]:hover {
         <p class="kicker">Delivery Risk</p>
         <h3>SUPPLIER DELAYS ARE DECISION DELAYS</h3>
         <p>Supplier delay is not only operational friction; it is a symptom of postponed decisions.</p>
+        <div class="buyer-notes">
+          <p><strong>For:</strong> procurement, supplier management, operations, contract and delivery-risk teams.</p>
+          <p><strong>Use when:</strong> delay is being treated as supplier failure but the decision trail behind it is unclear.</p>
+          <p><strong>Helps you see:</strong> ownership gaps, escalation delays, supplier assumptions, delivery-risk evidence and accountability exposure.</p>
+          <p><strong>Next step:</strong> move to Supplier Failure Before Impact or Premium Written Review if the delay is live.</p>
+        </div>
+        <p class="rights-short">Public written product. Institutional use, training, software, AI/LLM ingestion, workflows and deployment require written licensing.</p>
         <p class="price">€7.90</p>
         <a class="btn btn-gold" href="https://payhip.com/b/l0MvB" target="_blank" rel="noopener">Buy on Payhip</a>
       </div>
@@ -1621,7 +1838,15 @@ main [style*="text-shadow"]:hover {
       <div class="product-copy">
         <p class="kicker">Starter Bundle</p>
         <h3>PROCUREMENT EXPOSURE STARTER BUNDLE</h3>
+        <p class="store-badge">Recommended second step</p>
         <p>A focused entry bundle on supplier exposure, decision risk and procurement failure.</p>
+        <div class="buyer-notes">
+          <p><strong>For:</strong> professionals who want more than one briefing and need a structured first public-layer route.</p>
+          <p><strong>Use when:</strong> the buyer wants a broader procurement exposure entry point instead of a single-issue briefing.</p>
+          <p><strong>Helps you see:</strong> how supplier risk, procurement failure, contract exposure and decision defensibility connect.</p>
+          <p><strong>Next step:</strong> use this as the second purchase after a €7.90 briefing or before Premium Written Review.</p>
+        </div>
+        <p class="rights-short">Public written product. Institutional use, training, software, AI/LLM ingestion, workflows and deployment require written licensing.</p>
         <p class="price">€24.90</p>
         <a class="btn btn-gold" href="https://payhip.com/b/VoAv2" target="_blank" rel="noopener">Buy on Payhip</a>
       </div>
@@ -1660,6 +1885,13 @@ main [style*="text-shadow"]:hover {
         <p class="kicker">Decision Record</p>
         <h3>The Public Decision Record Pack</h3>
         <p>A public-layer written discipline for capturing critical decision logic.</p>
+        <div class="buyer-notes">
+          <p><strong>For:</strong> executives, procurement leaders, project owners, contract owners and governance teams.</p>
+          <p><strong>Use when:</strong> decisions are being made through meetings, emails or assumptions but the record is weak.</p>
+          <p><strong>Helps you see:</strong> decision rationale, accountability, evidence discipline, traceability and future scrutiny risk.</p>
+          <p><strong>Next step:</strong> use with The 72-Hour Decision Readiness Test or before Premium Written Review.</p>
+        </div>
+        <p class="rights-short">Public written product. Institutional use, training, software, AI/LLM ingestion, workflows and deployment require written licensing.</p>
         <p class="price">€24.90</p>
         <a class="btn btn-gold" href="https://payhip.com/b/ZbQcr" target="_blank" rel="noopener">Buy on Payhip</a>
       </div>
@@ -1670,6 +1902,13 @@ main [style*="text-shadow"]:hover {
         <p class="kicker">72-Hour Readiness</p>
         <h3>The 72-Hour Decision Readiness Test</h3>
         <p>What your organisation must clarify before pressure becomes failure.</p>
+        <div class="buyer-notes">
+          <p><strong>For:</strong> leaders, boards, procurement teams, resilience owners and decision-makers under time pressure.</p>
+          <p><strong>Use when:</strong> a critical situation may need action within 72 hours and decision defensibility is uncertain.</p>
+          <p><strong>Helps you see:</strong> readiness gaps, unclear ownership, missing evidence, escalation weakness and consequence exposure.</p>
+          <p><strong>Next step:</strong> move to The Public Decision Record Pack or Premium Written Review for one concrete decision.</p>
+        </div>
+        <p class="rights-short">Public written product. Institutional use, training, software, AI/LLM ingestion, workflows and deployment require written licensing.</p>
         <p class="price">€12.90</p>
         <a class="btn btn-gold" href="https://payhip.com/b/cRxvB" target="_blank" rel="noopener">Buy on Payhip</a>
       </div>
@@ -1719,7 +1958,13 @@ main [style*="text-shadow"]:hover {
     <div class="section-head reveal">
       <p class="eyebrow">Premium Written Review</p>
       <h2>Executive Decision Defensibility Review</h2>
-      <p>Priority written executive assessment for one procurement, supplier, contract, continuity, governance or decision-exposure situation. This is the paid bridge between public reading and serious written analysis.</p>
+      <p><strong>Premium Written Review is the commercial bridge between public reading and institutional licensing.</strong> It is designed for one concrete procurement, supplier, contract, continuity, governance or decision-exposure situation requiring priority written executive assessment.</p>
+      <div class="premium-review-detail-grid" aria-label="Premium written review details">
+        <article><h3>For</h3><p>Executives, procurement leaders, contract owners, supplier-risk owners, boards and governance teams facing a specific decision exposure.</p></article>
+        <article><h3>Use when</h3><p>A supplier, contract, emergency purchase, technology interruption, continuity event or decision path must be examined before consequence escalates.</p></article>
+        <article><h3>What you receive</h3><p>A priority written executive assessment for one defined situation, delivered within 5 business days, based on non-confidential written material supplied by the buyer.</p></article>
+        <article><h3>Does not include</h3><p>No software, implementation, training, organisational deployment, AI/LLM ingestion, workflows, dashboards, APIs or institutional-use rights.</p></article>
+      </div>
     </div>
     <div class="collection-grid single-feature">
     <article class="product-card product-card-featured reveal">
@@ -1801,7 +2046,7 @@ main [style*="text-shadow"]:hover {
     <p class="eyebrow">Canonical Custody Seal</p>
     <h2>Identifier: SHA-256 (PAYLOAD_CANON_181)</h2>
     <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-    <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+    <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
   </div>
 </section>
 </section>
@@ -1993,7 +2238,7 @@ main [style*="text-shadow"]:hover {
     <p class="eyebrow">Canonical custody</p>
     <h2>Identifier: SHA-256 (PAYLOAD_CANON_181)</h2>
     <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-    <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+    <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
   </section>
 </section>
 <section id="page-contact" class="page" data-page="contact">
@@ -2092,7 +2337,7 @@ main [style*="text-shadow"]:hover {
     <p class="eyebrow">Canonical Custody Seal</p>
     <h2>Identifier: SHA-256 (PAYLOAD_CANON_181)</h2>
     <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-    <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+    <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
   </div>
 </section>
 </section>
@@ -2152,7 +2397,7 @@ main [style*="text-shadow"]:hover {
     <p class="eyebrow">Canonical Custody Seal</p>
     <h2>Identifier: SHA-256 (PAYLOAD_CANON_181)</h2>
     <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-    <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+    <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
   </div>
 </section>
 </section>
@@ -2188,7 +2433,7 @@ main [style*="text-shadow"]:hover {
     <p class="eyebrow">Canonical Custody Seal</p>
     <h2>Identifier: SHA-256 (PAYLOAD_CANON_181)</h2>
     <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-    <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+    <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
   </div>
 </section>
 </section>
@@ -2224,7 +2469,7 @@ main [style*="text-shadow"]:hover {
     <p class="eyebrow">Canonical Custody Seal</p>
     <h2>Identifier: SHA-256 (PAYLOAD_CANON_181)</h2>
     <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-    <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+    <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
   </div>
 </section>
 </section>
@@ -2260,7 +2505,7 @@ main [style*="text-shadow"]:hover {
     <p class="eyebrow">Canonical Custody Seal</p>
     <h2>Identifier: SHA-256 (PAYLOAD_CANON_181)</h2>
     <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-    <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+    <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
   </div>
 </section>
 </section>
@@ -2340,7 +2585,7 @@ main [style*="text-shadow"]:hover {
     <p class="eyebrow">Canonical Custody Seal</p>
     <h2>Identifier: SHA-256 (PAYLOAD_CANON_181)</h2>
     <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-    <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+    <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
   </div>
 </section>
 
@@ -2350,7 +2595,7 @@ main [style*="text-shadow"]:hover {
       <h2>Canonical terms were fixed as a protected public record.</h2>
       <p>Identifier: SHA-256 (PAYLOAD_CANON_181)</p>
       <p class="sha-hash">0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337</p>
-      <p>This SHA-256 (PAYLOAD_CANON_181) was effectively established and consolidated on 30 March 2026.</p>
+      <p>The Custody Seal records the authorised public version of this platform for authorship and IP custody purposes. It is not a certification, client claim or implementation licence.</p>
     </div>
   </section>
 </section>

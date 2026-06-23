@@ -548,6 +548,14 @@ main [style*="text-shadow"]:hover {
 .footprint-card strong { color:var(--gold2); font-family:Georgia,serif; font-weight:500; font-size:1.15rem; }
 .footprint-card span { color:#b8c4d2; font-size:.86rem; }
 .footprint-card:hover { border-color:rgba(214,173,84,.65); transform:translateY(-1px); }
+.author-library-divider{margin:1.6rem 0 0;padding-top:1.15rem;border-top:1px solid rgba(214,173,84,.24);}
+.author-library-subhead{font-family:Georgia,serif;font-weight:500;font-size:1.25rem;color:#f4efe2;margin:.25rem 0 .5rem;}
+.author-library-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.85rem;margin-top:1rem;}
+.author-library-grid .footprint-card{min-height:150px;}
+.anthology-line{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.028);padding:1rem;margin-top:1rem;color:#b8c4d2;line-height:1.55;}
+.anthology-line strong{color:#f4efe2;}
+@media(max-width:900px){.author-library-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.author-library-grid{grid-template-columns:1fr}}
 @media(max-width:900px){.footprint-grid{grid-template-columns:1fr 1fr}.editorial-footprint,.fiction-literary-works{margin:2.5rem 1rem;}}
 @media(max-width:620px){.footprint-grid{grid-template-columns:1fr}}
 
@@ -843,16 +851,33 @@ main [style*="text-shadow"]:hover {
     </div>
   </section>
 
-  <section id="editorial-footprint" class="editorial-footprint reveal" aria-label="Public editorial footprint">
+  <section id="editorial-footprint" class="editorial-footprint reveal" aria-label="Public editorial footprint and earlier literary works">
     <p class="eyebrow">Published Author · Editorial Footprint</p>
     <h2>Public authorship beyond a single platform.</h2>
-    <p>Ricardo Manuel Machado Ferreira’s literary work is publicly listed through established Portuguese book and publishing channels, including FNAC, Bertrand, Wook and Chiado Books. This reinforces the second body of work behind his public authorship: fiction, memory, secrecy, legacy and human consequence.</p>
-    <p>The technical and doctrinal work remains the primary institutional layer of this site. The literary footprint is preserved as a separate authorial dimension.</p>
-    <div class="footprint-grid" aria-label="External editorial and book-channel links">
+    <p>Ricardo Manuel Machado Ferreira’s official store remains focused on Sovereign Decision Science™, the Ferreira Doctrine™, public written products, technical books, premium written review and institutional licensing. This separate authorial layer documents the wider literary portfolio without diluting the commercial path.</p>
+    <p><strong>Featured earlier literary work: Amor.</strong> A Portuguese literary work by Ricardo Manuel Machado Ferreira, published through Chiado Books and publicly available through Portuguese book retail channels including FNAC, Wook, Chiado Books and Bertrand.</p>
+    <div class="footprint-grid" aria-label="Book-channel links for Amor and authorial listings">
       <a class="footprint-card" href="https://www.fnac.pt/Amor-Ricardo-Manuel-Machado-Ferreira/a8266572" target="_blank" rel="noopener"><strong>FNAC</strong><span>Book-channel listing for Amor.</span></a>
-      <a class="footprint-card" href="https://www.bertrand.pt/autor/ricardo-manuel-machado-ferreira/5035561" target="_blank" rel="noopener"><strong>Bertrand</strong><span>Author page / bibliography listing.</span></a>
-      <a class="footprint-card" href="https://www.wook.pt/autor/ricardo-manuel-machado-ferreira/5035561" target="_blank" rel="noopener"><strong>Wook</strong><span>Author page / bibliography listing.</span></a>
-      <a class="footprint-card" href="https://www.chiadobooks.com/autor-25665" target="_blank" rel="noopener"><strong>Chiado Books</strong><span>Publisher author page.</span></a>
+      <a class="footprint-card" href="https://www.wook.pt/livro/amor-ricardo-manuel-machado-ferreira/24526057" target="_blank" rel="noopener"><strong>Wook</strong><span>Book-channel listing for Amor.</span></a>
+      <a class="footprint-card" href="https://www.chiadobooks.com/amor" target="_blank" rel="noopener"><strong>Chiado Books</strong><span>Publisher listing for Amor.</span></a>
+      <a class="footprint-card" href="https://www.bertrand.pt/livro/amor-ricardo-manuel-machado-ferreira/24526057" target="_blank" rel="noopener"><strong>Bertrand</strong><span>Book-channel listing for Amor.</span></a>
+    </div>
+
+    <div class="author-library-divider" aria-label="Earlier literary works available on Amazon">
+      <h3 class="author-library-subhead">Earlier literary works available through Amazon</h3>
+      <p>These works are presented as a compact author-library layer: useful for readers who want the wider portfolio, but kept below the institutional and technical sales path.</p>
+      <div class="author-library-grid">
+        <a class="footprint-card" href="https://www.amazon.es/-/pt/dp/B0CGTTTNKY/" target="_blank" rel="noopener"><strong>Versos Além do Horizonte</strong><span>Poesias que Tocam a Alma · Portuguese poetry.</span></a>
+        <a class="footprint-card" href="https://www.amazon.es/-/pt/dp/B08H6TMCD7/" target="_blank" rel="noopener"><strong>POEMAS DE ENCANTAR</strong><span>Volume 1 · Portuguese poetry.</span></a>
+        <a class="footprint-card" href="https://www.amazon.es/-/pt/dp/B0CGNW9XQB/" target="_blank" rel="noopener"><strong>Harmonias do Coração</strong><span>50 Poemas sobre o Amor · Portuguese edition.</span></a>
+        <a class="footprint-card" href="https://www.amazon.es/-/pt/dp/B0CH7BDBLJ/" target="_blank" rel="noopener"><strong>Navigating Between Letters and Emotions</strong><span>English literary work on passion and literary adventure.</span></a>
+      </div>
+    </div>
+
+    <div class="author-library-divider" aria-label="Collective literary publications and anthology participation">
+      <h3 class="author-library-subhead">Collective literary publications and anthology participation</h3>
+      <p class="anthology-line"><strong>Documented authorial participation:</strong> Lisboa, uma cidade mágica — Volume II; Entre o Sono e o Sonho — Vol. XII; Entre o Sono e o Sonho — Vol. XVII; Liberdade — Antologia da Poesia Livre — Vol. II.</p>
+      <p>This anthology line is included for authorial breadth and name presence only. It is not presented as a product catalogue and does not interfere with the official store path.</p>
     </div>
   </section>
 <div class="cover-reel" aria-hidden="true"><div class="reel-track"><div class="reel-item"><img src="assets/img_003_5a3a256eaec47814.webp" alt="Mastering Procurement Processes" loading="lazy" decoding="async" class=""><span>Mastering Procurement Processes</span></div><div class="reel-item"><img src="assets/img_004_4bd68490f4d31653.webp" alt="Supply Sovereignty &amp; Strategic Procurement Leadership — Volume I" loading="lazy" decoding="async" class=""><span>Supply Sovereignty &amp; Strategic Procurement Leadership — Volume I</span></div><div class="reel-item"><img src="assets/img_005_8467f5180b2abe7c.webp" alt="Supply Sovereignty &amp; Strategic Procurement Leadership — Volume II" loading="lazy" decoding="async" class=""><span>Supply Sovereignty &amp; Strategic Procurement Leadership — Volume II</span></div><div class="reel-item"><img src="assets/img_006_03b4644b165b4462.webp" alt="The Integrity Engine™" loading="lazy" decoding="async" class=""><span>The Integrity Engine™</span></div><div class="reel-item"><img src="assets/img_007_f2f84d8479bf0fe2.webp" alt="Echoes of the Forgotten Cipher" loading="lazy" decoding="async" class=""><span>Echoes of the Forgotten Cipher</span></div><div class="reel-item"><img src="assets/img_008_60529d8f7388edc6.webp" alt="Project Krasnaya" loading="lazy" decoding="async" class=""><span>Project Krasnaya</span></div><div class="reel-item"><img src="assets/img_009_7775b9acb3cec550.webp" alt="O Legado da Rosa Silenciosa" loading="lazy" decoding="async" class=""><span>O Legado da Rosa Silenciosa</span></div><div class="reel-item"><img src="assets/img_010_aaf6202a5a1ceeb1.webp" alt="A Baía dos Segredos: O Despertar da Orquídea" loading="lazy" decoding="async" class=""><span>A Baía dos Segredos: O Despertar da Orquídea</span></div><div class="reel-item"><img src="assets/img_003_5a3a256eaec47814.webp" alt="Mastering Procurement Processes" loading="lazy" decoding="async" class=""><span>Mastering Procurement Processes</span></div><div class="reel-item"><img src="assets/img_004_4bd68490f4d31653.webp" alt="Supply Sovereignty &amp; Strategic Procurement Leadership — Volume I" loading="lazy" decoding="async" class=""><span>Supply Sovereignty &amp; Strategic Procurement Leadership — Volume I</span></div><div class="reel-item"><img src="assets/img_005_8467f5180b2abe7c.webp" alt="Supply Sovereignty &amp; Strategic Procurement Leadership — Volume II" loading="lazy" decoding="async" class=""><span>Supply Sovereignty &amp; Strategic Procurement Leadership — Volume II</span></div><div class="reel-item"><img src="assets/img_006_03b4644b165b4462.webp" alt="The Integrity Engine™" loading="lazy" decoding="async" class=""><span>The Integrity Engine™</span></div><div class="reel-item"><img src="assets/img_007_f2f84d8479bf0fe2.webp" alt="Echoes of the Forgotten Cipher" loading="lazy" decoding="async" class=""><span>Echoes of the Forgotten Cipher</span></div><div class="reel-item"><img src="assets/img_008_60529d8f7388edc6.webp" alt="Project Krasnaya" loading="lazy" decoding="async" class=""><span>Project Krasnaya</span></div><div class="reel-item"><img src="assets/img_009_7775b9acb3cec550.webp" alt="O Legado da Rosa Silenciosa" loading="lazy" decoding="async" class=""><span>O Legado da Rosa Silenciosa</span></div><div class="reel-item"><img src="assets/img_010_aaf6202a5a1ceeb1.webp" alt="A Baía dos Segredos: O Despertar da Orquídea" loading="lazy" decoding="async" class=""><span>A Baía dos Segredos: O Despertar da Orquídea</span></div></div></div>

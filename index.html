@@ -14,11 +14,11 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);
 <meta name="site-integrity-seal" content="SHA-256 (PAYLOAD_CANON_181): 0658208838d0ba5a402d94b5f41018c4014249a41a0b2b0b1931490c50bf8337; fixation: 30 March 2026">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#06101d">
-<link rel="canonical" href="https://ricardomferreiraescritor-art.github.io/ricardo-ferreira-sovereign-decision-science/">
+<link rel="canonical" href="https://www.ricardoferreira.ai/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ricardo Manuel Machado Ferreira | Sovereign Decision Science™">
 <meta property="og:description" content="Official premium public-layer platform for books, executive briefings, bundles, premium written reviews, institutional licensing and protected enterprise software access by written quotation.">
-<meta property="og:url" content="https://ricardomferreiraescritor-art.github.io/ricardo-ferreira-sovereign-decision-science/">
+<meta property="og:url" content="https://www.ricardoferreira.ai/">
 <meta property="og:image" content="https://ricardomferreiraescritor-art.github.io/ricardo-ferreira-sovereign-decision-science/sds-official-social-card.png?v=20260622-p100-gold-commerce">
 <meta name="twitter:card" content="summary_large_image">
 <style>
@@ -334,7 +334,7 @@ body:not(.router-ready) #page-home{display:block!important;}
 
 </style>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "Person", "name": "Ricardo Manuel Machado Ferreira", "email": "mailto:rmmferreira@netcabo.pt", "jobTitle": "Senior Procurement & Supply Chain Executive, Author, Creator of the Ferreira Doctrine and Architect of Sovereign Decision Science", "url": "https://ricardomferreiraescritor-art.github.io/ricardo-ferreira-sovereign-decision-science/", "sameAs": ["https://www.amazon.com/author/ricardomanuelmachadoferreira", "https://payhip.com/SovereignDecisionScience"]}
+{"@context": "https://schema.org", "@type": "Person", "name": "Ricardo Manuel Machado Ferreira", "email": "mailto:rmmferreira@netcabo.pt", "jobTitle": "Senior Procurement & Supply Chain Executive, Author, Creator of the Ferreira Doctrine and Architect of Sovereign Decision Science", "url": "https://www.ricardoferreira.ai/", "sameAs": ["https://www.amazon.com/author/ricardomanuelmachadoferreira", "https://payhip.com/SovereignDecisionScience"]}
 </script>
 
 <style id="rf-translation-label-fix">
@@ -619,9 +619,59 @@ main [style*="text-shadow"]:hover {
   transform: translateY(-1px);
 }
 </style>
+
+<style id="p100-zero-translation-stability-fix">
+/* P100 ZERO-TRANSLATION STABILITY FIX — removes machine-translation instability and hover deformation. */
+.language-switcher,
+#google_translate_element,
+.goog-te-banner-frame,
+.goog-te-gadget,
+.goog-te-combo,
+.goog-tooltip,
+.goog-text-highlight,
+#goog-gt-tt,
+[class*="VIpgJd"],
+iframe.skiptranslate,
+body > .skiptranslate {
+  display:none!important;
+  visibility:hidden!important;
+  opacity:0!important;
+  height:0!important;
+  max-height:0!important;
+  width:0!important;
+  max-width:0!important;
+  overflow:hidden!important;
+  pointer-events:none!important;
+}
+html,body{top:0!important;margin-top:0!important;}
+main :where(h1,h2,h3,h4,p,li,span,strong,em,small,a,font):hover{
+  background:transparent!important;
+  background-color:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+  text-shadow:none!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+}
+.product-card:hover,
+.book-card:hover,
+.portal-card:hover,
+.footprint-card:hover,
+.route-chip:hover,
+.ladder-step:hover,
+.btn:hover,
+.mini-link:hover{
+  transform:none!important;
+  text-shadow:none!important;
+  filter:none!important;
+}
+.footprint-card:hover{border-color:rgba(214,173,84,.65)!important;}
+.btn-gold:hover{background:var(--gold2)!important;color:#06101d!important;}
+.btn-outline:hover{border-color:var(--gold)!important;color:var(--gold2)!important;}
+.reveal{will-change:auto!important;}
+</style>
 </head>
 <body>
-<div id="google_translate_element" style="position:absolute;left:-9999px;top:-9999px;height:0;overflow:hidden"></div>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="header-inner">
@@ -643,12 +693,6 @@ main [style*="text-shadow"]:hover {
       <a href="#fiction" data-route="fiction">Fiction &amp; Literary Works</a>
       <a href="#contact" data-route="contact">Contact</a>
     </nav>
-    <div class="language-switcher notranslate" translate="no" aria-label="Site language selector">
-      <button class="lang-btn notranslate" translate="no" type="button" data-lang="pt" data-label="PT">PT</button>
-      <button class="lang-btn notranslate active" translate="no" type="button" data-lang="en" data-label="EN">EN</button>
-      <button class="lang-btn notranslate" translate="no" type="button" data-lang="fr" data-label="FR">FR</button>
-      <button class="lang-btn notranslate" translate="no" type="button" data-lang="de" data-label="DE">DE</button>
-    </div>
   </div>
 </header>
 <main id="main">
@@ -2769,169 +2813,12 @@ main [style*="text-shadow"]:hover {
   }
   document.querySelectorAll('#newsletter-form,.site-subscription-form').forEach(bindSubscriptionForm);
 
-  /* Stable in-site translation controller. Uses Google Translate element internally; protects PT/EN/FR/DE labels. */
-  function resetLanguageLabels(){
-    const labels={pt:'PT',en:'EN',fr:'FR',de:'DE'};
-    document.querySelectorAll('.lang-btn').forEach(btn=>{
-      const lang=btn.dataset.lang;
-      btn.textContent=labels[lang] || (lang||'').toUpperCase();
-      btn.classList.add('notranslate');
-      btn.setAttribute('translate','no');
-    });
-  }
-  function hideTranslateChrome(){
-    document.documentElement.style.setProperty('top','0px','important');
-    document.body.style.setProperty('top','0px','important');
-    document.body.style.setProperty('position','static','important');
-    document.querySelectorAll('iframe.goog-te-banner-frame,.goog-te-banner-frame,body>.skiptranslate,.skiptranslate,#goog-gt-tt,.goog-tooltip,.VIpgJd-ZVi9od-ORHb-OEVmcd,.VIpgJd-ZVi9od-aZ2wEe-wOHMyf,.goog-te-balloon-frame').forEach(el=>{
-      el.style.setProperty('display','none','important');
-      el.style.setProperty('visibility','hidden','important');
-      el.style.setProperty('height','0','important');
-      el.style.setProperty('max-height','0','important');
-      el.style.setProperty('overflow','hidden','important');
-      el.style.setProperty('pointer-events','none','important');
-    });
-    document.querySelectorAll('.goog-text-highlight').forEach(el=>{
-      el.style.setProperty('background','transparent','important');
-      el.style.setProperty('box-shadow','none','important');
-      el.style.setProperty('text-shadow','none','important');
-    });
-    resetLanguageLabels();
-  }
-  function eraseGoogTrans(){
-    const expired='Thu, 01 Jan 1970 00:00:00 GMT';
-    const paths=['/','/ricardo-ferreira-sovereign-decision-science/'];
-    const domains=['','; domain='+location.hostname,'; domain=.'+location.hostname];
-    paths.forEach(path=>domains.forEach(domain=>{
-      document.cookie='googtrans=; expires='+expired+'; path='+path+domain;
-    }));
-  }
-  function setGoogTrans(lang){
-    eraseGoogTrans();
-    if(lang==='en') return;
-    const value='/en/'+lang;
-    const expires=new Date(Date.now()+45*24*60*60*1000).toUTCString();
-    const paths=['/','/ricardo-ferreira-sovereign-decision-science/'];
-    paths.forEach(path=>{
-      document.cookie='googtrans='+value+'; expires='+expires+'; path='+path+'; SameSite=Lax';
-    });
-  }
-  function setActiveLanguage(lang){
-    document.querySelectorAll('.lang-btn').forEach(btn=>btn.classList.toggle('active',btn.dataset.lang===lang));
-    document.documentElement.setAttribute('data-current-lang',lang);
-    resetLanguageLabels();
-  }
-  function readGoogTransLang(){
-    const match=document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
-    if(match){
-      const value=decodeURIComponent(match[1]);
-      const m=value.match(/\/en\/(pt|fr|de)/);
-      if(m) return m[1];
-    }
-    return localStorage.getItem('rf_site_lang') || 'en';
-  }
-  function applyCombo(lang){
-    const combo=document.querySelector('select.goog-te-combo');
-    if(!combo) return false;
-    combo.value=lang;
-    combo.dispatchEvent(new Event('change',{bubbles:true}));
-    combo.dispatchEvent(new Event('input',{bubbles:true}));
-    setTimeout(hideTranslateChrome,100);
-    setTimeout(hideTranslateChrome,700);
-    setTimeout(hideTranslateChrome,1600);
-    return true;
-  }
-  function changeSiteLanguage(lang){
-    if(!['pt','en','fr','de'].includes(lang)) return;
-    localStorage.setItem('rf_site_lang',lang);
-    setActiveLanguage(lang);
-    setGoogTrans(lang);
-    if(lang==='en'){
-      location.reload();
-      return;
-    }
-    if(applyCombo(lang)) return;
-    let tries=0;
-    const timer=setInterval(()=>{
-      tries++;
-      if(applyCombo(lang)){clearInterval(timer);return;}
-      if(tries>35){clearInterval(timer);location.reload();}
-    },180);
-  }
-  window.googleTranslateElementInit=function(){
-    if(window.google&&google.translate){
-      new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'pt,en,fr,de',autoDisplay:false,multilanguagePage:true},'google_translate_element');
-    }
-    setTimeout(()=>{
-      const lang=readGoogTransLang();
-      setActiveLanguage(lang);
-      if(lang!=='en') applyCombo(lang);
-      hideTranslateChrome();
-    },350);
-  };
-  document.querySelectorAll('.lang-btn').forEach(btn=>{
-    btn.addEventListener('click',function(e){
-      e.preventDefault();
-      e.stopPropagation();
-      changeSiteLanguage(this.dataset.lang);
-    });
-  });
-  resetLanguageLabels();
-  setActiveLanguage(readGoogTransLang());
-  /* EMERGENCY LIVE FIX — removed recursive MutationObserver/setInterval loop that could freeze the page. */
-  const switcher=document.querySelector('.language-switcher');
-  resetLanguageLabels();
-  hideTranslateChrome();
-  setTimeout(hideTranslateChrome,500);
-  setTimeout(hideTranslateChrome,1500);
-  setTimeout(hideTranslateChrome,3000);
+  /* P100 stability fix: machine translation removed from the official site.
+     The previous Google Translate layer altered DOM text nodes on hover and caused layout/text deformation.
+     The official platform now remains static, English-first and structurally stable. */
+  document.documentElement.setAttribute('data-current-lang','en');
+  document.documentElement.classList.add('rf-static-language');
 
-})();
-</script>
-<script defer src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<script id="p100-final-anti-glow-js">
-(function(){
-  const panelSelector = '.editorial-copy,.product-card,.book-card,.portal-card,.contact-box,.full-bleed-callout,.custody-seal,.conversion-gateway,.subscription-panel,.rights-boundary-panel,.public-purchase-boundary,.institutional-capability-panel,.faq-boundary-panel,.journal-card,.panel,.feature,.editorial-footprint,.footprint-card,.fiction-literary-works';
-  function cleanNode(el){
-    if(!el || el.nodeType !== 1) return;
-    try{
-      el.style.background = 'transparent';
-      el.style.backgroundColor = 'transparent';
-      el.style.backgroundImage = 'none';
-      el.style.boxShadow = 'none';
-      el.style.textShadow = 'none';
-      el.style.filter = 'none';
-      el.style.mixBlendMode = 'normal';
-      if(el.classList){
-        el.classList.remove('goog-text-highlight','VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q');
-      }
-    }catch(e){}
-  }
-  function cleanPanel(panel){
-    if(!panel) return;
-    const nodes = panel.querySelectorAll('font,span,p,h1,h2,h3,h4,small,strong,em,li,a,.goog-text-highlight,[class*="VIpgJd"]');
-    nodes.forEach(cleanNode);
-  }
-  let lastPanel = null;
-  let scheduled = false;
-  document.addEventListener('mouseover', function(e){
-    const panel = e.target && e.target.closest ? e.target.closest(panelSelector) : null;
-    if(!panel || panel === lastPanel || scheduled) return;
-    lastPanel = panel;
-    scheduled = true;
-    requestAnimationFrame(function(){
-      cleanPanel(panel);
-      scheduled = false;
-    });
-  }, {passive:true, capture:true});
-  document.addEventListener('click', function(e){
-    const panel = e.target && e.target.closest ? e.target.closest(panelSelector) : null;
-    if(panel) cleanPanel(panel);
-  }, {passive:true, capture:true});
-  setTimeout(function(){
-    document.querySelectorAll('.goog-text-highlight,[class*="VIpgJd"],main font').forEach(cleanNode);
-  }, 1200);
 })();
 </script>
 

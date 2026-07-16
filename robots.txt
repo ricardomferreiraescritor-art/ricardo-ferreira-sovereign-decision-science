@@ -1,4 +1,85 @@
-User-agent: *
-Allow: /
+<!DOCTYPE html>
 
-Sitemap: https://ricardomferreiraescritor-art.github.io/ricardo-ferreira-sovereign-decision-science/sitemap.xml
+<html lang="en">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YSTYJ3M723"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YSTYJ3M723');</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Institutional Licensing | Sovereign Decision Science™</title>
+<meta content="Formal licensing for implementation, training, software, dashboards, workflows, AI/LLM ingestion, ERP/MRP integration and organisational use." name="description"/>
+<meta content="Ricardo Manuel Machado Ferreira" name="author"/>
+<meta content="index,follow" name="robots"/>
+<meta content="#06101d" name="theme-color"/>
+<link href="https://www.ricardoferreira.ai/licensing.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Institutional Licensing | Sovereign Decision Science™" property="og:title"/>
+<meta content="Formal licensing for implementation, training, software, dashboards, workflows, AI/LLM ingestion, ERP/MRP integration and organisational use." property="og:description"/>
+<meta content="https://www.ricardoferreira.ai/licensing.html" property="og:url"/>
+<meta content="https://www.ricardoferreira.ai/sds-official-social-card.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="assets/p100-sales.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Ricardo Manuel Machado Ferreira", "jobTitle": "Creator of the Ferreira Doctrine and Architect of Sovereign Decision Science", "url": "https://www.ricardoferreira.ai/", "email": "mailto:contact@ricardoferreira.ai"}</script>
+</head><body>
+<header class="site-header p100-header">
+<div class="header-inner p100-header-inner">
+<a aria-label="Ricardo Manuel Machado Ferreira" class="brand" href="index.html">
+<span class="brand-mark">RF</span>
+<span><strong>Ricardo Manuel Machado Ferreira</strong><small>Creator of the Ferreira Doctrine™ · Architect of Sovereign Decision Science™</small></span>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="menu-toggle" type="button">Menu</button>
+<nav aria-label="Main navigation" class="site-nav p100-nav" id="site-nav">
+<a data-i18n="sales.nav.start" href="start-here.html">Start Here</a>
+<a data-i18n="sales.nav.series" href="index.html#decision-series">Decision Series</a>
+<a data-i18n="sales.nav.books" href="library.html">Books</a>
+<a data-i18n="sales.nav.review" href="executive-review.html">Executive Review</a>
+<a data-i18n="sales.nav.licensing" href="licensing.html">Licensing</a>
+<a data-i18n="sales.nav.about" href="about.html">About</a>
+</nav>
+<a class="p100-shop-link" data-i18n="sales.nav.shop" href="shop.html">Shop</a>
+<a class="btn btn-gold p100-header-cta" data-i18n="sales.nav.cta" href="start-here.html">Start the Decision Route</a>
+<div aria-label="Language selector" class="rf-lang-bar">
+<button data-lang="pt" type="button">PT</button><button class="active" data-lang="en" type="button">EN</button><button data-lang="de" type="button">DE</button><button data-lang="fr" type="button">FR</button>
+</div>
+</div>
+</header>
+<main class="p100-secondary-main" id="main">
+<section class="p100-page-hero">
+<p class="eyebrow" data-i18n="sales.licensing.kicker">Institutional Access</p>
+<h1 data-i18n="sales.licensing.title">Public understanding ends where authorised implementation begins.</h1>
+<p>Training, implementation, software, dashboards, workflows, AI/LLM ingestion, ERP/MRP integration, derivatives and organisational deployment require formal written scoping, quotation and licensing.</p>
+<div class="p100-hero-actions"><a class="btn btn-gold" href="mailto:licensing@ricardoferreira.ai?subject=Institutional%20Licensing%20Inquiry">Request Institutional Access</a><a class="btn btn-outline" href="mailto:rights@ricardoferreira.ai?subject=Rights%20and%20IP%20Inquiry">Rights / IP Inquiry</a></div>
+</section>
+<section class="section panel" id="licensing"><p class="eyebrow">Institutional Access</p><h2 data-i18n="lic.title">Institutional Access / Licensing</h2><p data-i18n="lic.text">Institutional use starts only by formal written inquiry, written scoping and written quotation. Public access explains the problem. Institutional licensing defines the authorised implementation boundary.</p><div class="cta-row"><a class="btn btn-gold" data-i18n="cta.inquire" href="mailto:licensing@ricardoferreira.ai?subject=Institutional%20Licensing%20Inquiry">Send formal inquiry</a></div><p><a class="email-link" data-i18n="lic.email" href="mailto:licensing@ricardoferreira.ai">licensing@ricardoferreira.ai</a></p></section>
+<section class="section panel" id="rights"><p class="eyebrow">Rights Boundary</p><h2 data-i18n="rights.title">Rights Boundary</h2><p data-i18n="rights.text">Public access does not constitute implementation rights. No implementation, training, software, dashboard, API, workflow, ERP/MRP, AI/LLM ingestion, derivative, deployment or organisational-use rights are granted without formal written licence from the rights holder.</p><ul class="rights-list"><li data-i18n="rights.list1">No implementation or training rights</li><li data-i18n="rights.list2">No software, dashboard, API, workflow or ERP/MRP rights</li><li data-i18n="rights.list3">No AI/LLM ingestion, derivative or organisational-use rights</li><li data-i18n="rights.list4">Protected architecture remains licensed only</li></ul><p><a class="email-link" data-i18n="rights.email" href="mailto:rights@ricardoferreira.ai">rights@ricardoferreira.ai</a></p><div class="hash-seal"><strong data-i18n="hash.title">Canonical Sovereignty Asset Hash</strong><br/><span data-i18n="hash.date">Date: 30 March 2026</span><br/>SHA-256: 8fb10c5982879555621430032906e7883a45c61313493c4a23b3612542a178e2</div></section>
+<section class="section panel" id="software"><p class="eyebrow">Software</p><h2 data-i18n="software.title">Protected Enterprise Software Direction</h2><p data-i18n="software.text">Software, ERP/MRP integration layers, dashboards, APIs, workflows and institutional deployment are not public products. They are available only through formal written licensing, scoping, quotation and controlled implementation.</p><div class="list-panel"><div data-i18n="software.item1">ERP/MRP integration pathways</div><div data-i18n="software.item2">Dashboards and controlled views</div><div data-i18n="software.item3">APIs and workflow translation</div><div data-i18n="software.item4">Contract-controlled access boundaries</div></div></section>
+<section class="section" id="contact"><div class="section-head"><p class="eyebrow">Contact</p><h2 data-i18n="contact.title">Contact</h2><p data-i18n="contact.text">Use the appropriate professional address for general contact, institutional licensing or rights/IP matters.</p></div><div class="contact-grid"><article class="contact-card"><h3 data-i18n="contact.general">General contact</h3><a class="email-link" href="mailto:contact@ricardoferreira.ai">contact@ricardoferreira.ai</a></article><article class="contact-card"><h3 data-i18n="contact.licensing">Institutional licensing / software</h3><a class="email-link" href="mailto:licensing@ricardoferreira.ai">licensing@ricardoferreira.ai</a></article><article class="contact-card"><h3 data-i18n="contact.rights">Rights / IP / unauthorised use</h3><a class="email-link" href="mailto:rights@ricardoferreira.ai">rights@ricardoferreira.ai</a></article><div class="contact-card"><h3>LinkedIn</h3><a class="email-link" href="https://www.linkedin.com/in/ricardo-manuel-machado-ferreira-a05a76299" rel="noopener" target="_blank">Ricardo Manuel Machado Ferreira</a></div></div></section>
+</main>
+<footer class="footer p100-footer">
+<div class="footer-inner">
+<div>
+<strong>Ricardo Manuel Machado Ferreira</strong>
+<p>Creator of the Ferreira Doctrine™<br/>Architect of Sovereign Decision Science™</p>
+<a href="https://www.ricardoferreira.ai/">www.ricardoferreira.ai</a>
+</div>
+<div><strong data-i18n="sales.footer.routes">Decision Routes</strong>
+<a data-i18n="sales.nav.start" href="start-here.html">Start Here</a>
+<a data-i18n="sales.nav.series" href="index.html#decision-series">Decision Series</a>
+<a data-i18n="sales.nav.shop" href="shop.html">Shop</a>
+</div>
+<div><strong data-i18n="sales.footer.access">Executive Access</strong>
+<a data-i18n="sales.nav.review" href="executive-review.html">Executive Review</a>
+<a data-i18n="sales.nav.licensing" href="licensing.html">Licensing</a>
+<a data-i18n="sales.nav.books" href="library.html">Books</a>
+</div>
+<div><strong data-i18n="sales.footer.contact">Contact</strong>
+<a href="mailto:contact@ricardoferreira.ai">contact@ricardoferreira.ai</a>
+<a href="mailto:licensing@ricardoferreira.ai">licensing@ricardoferreira.ai</a>
+<a href="mailto:rights@ricardoferreira.ai">rights@ricardoferreira.ai</a>
+</div>
+</div>
+<div class="footer-bottom">© 2026 Ricardo Manuel Machado Ferreira. All rights reserved. Public reading does not grant implementation, training, software, AI/LLM, derivative or organisational-use rights.</div>
+</footer>
+<div class="mobile-sales-bar"><a href="start-here.html">Start Route</a><a href="shop.html">Shop</a></div>
+<script src="assets/rf-translations.js"></script><script src="assets/p100-sales.js"></script></body></html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YSTYJ3M723"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YSTYJ3M723');</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Books and Published Works | Ricardo Manuel Machado Ferreira</title>
+<meta content="Technical and doctrinal books on procurement governance, supply sovereignty and decision integrity, plus a separate literary body of work." name="description"/>
+<meta content="Ricardo Manuel Machado Ferreira" name="author"/>
+<meta content="index,follow" name="robots"/>
+<meta content="#06101d" name="theme-color"/>
+<link href="https://www.ricardoferreira.ai/library.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Books and Published Works | Ricardo Manuel Machado Ferreira" property="og:title"/>
+<meta content="Technical and doctrinal books on procurement governance, supply sovereignty and decision integrity, plus a separate literary body of work." property="og:description"/>
+<meta content="https://www.ricardoferreira.ai/library.html" property="og:url"/>
+<meta content="https://www.ricardoferreira.ai/sds-official-social-card.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="assets/p100-sales.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Ricardo Manuel Machado Ferreira", "jobTitle": "Creator of the Ferreira Doctrine and Architect of Sovereign Decision Science", "url": "https://www.ricardoferreira.ai/", "email": "mailto:contact@ricardoferreira.ai"}</script>
+</head><body>
+<header class="site-header p100-header">
+<div class="header-inner p100-header-inner">
+<a aria-label="Ricardo Manuel Machado Ferreira" class="brand" href="index.html">
+<span class="brand-mark">RF</span>
+<span><strong>Ricardo Manuel Machado Ferreira</strong><small>Creator of the Ferreira Doctrine™ · Architect of Sovereign Decision Science™</small></span>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="menu-toggle" type="button">Menu</button>
+<nav aria-label="Main navigation" class="site-nav p100-nav" id="site-nav">
+<a data-i18n="sales.nav.start" href="start-here.html">Start Here</a>
+<a data-i18n="sales.nav.series" href="index.html#decision-series">Decision Series</a>
+<a data-i18n="sales.nav.books" href="library.html">Books</a>
+<a data-i18n="sales.nav.review" href="executive-review.html">Executive Review</a>
+<a data-i18n="sales.nav.licensing" href="licensing.html">Licensing</a>
+<a data-i18n="sales.nav.about" href="about.html">About</a>
+</nav>
+<a class="p100-shop-link" data-i18n="sales.nav.shop" href="shop.html">Shop</a>
+<a class="btn btn-gold p100-header-cta" data-i18n="sales.nav.cta" href="start-here.html">Start the Decision Route</a>
+<div aria-label="Language selector" class="rf-lang-bar">
+<button data-lang="pt" type="button">PT</button><button class="active" data-lang="en" type="button">EN</button><button data-lang="de" type="button">DE</button><button data-lang="fr" type="button">FR</button>
+</div>
+</div>
+</header>
+<main class="p100-secondary-main" id="main">
+<section class="p100-page-hero">
+<p class="eyebrow" data-i18n="sales.library.kicker">Books and Published Works</p>
+<h1 data-i18n="sales.library.title">Doctrine, procurement governance, supply sovereignty and literary consequence.</h1>
+<p>Published technical books form the public intellectual layer of the discipline. Literary works remain clearly separated from executive products and institutional access.</p>
+</section>
+<section class="p100-section">
+<div class="p100-section-head">
+<p class="eyebrow" data-i18n="sales.library.kicker">Books and Published Works</p>
+<h2 data-i18n="sales.library.title">Doctrine, procurement governance, supply sovereignty and literary consequence.</h2>
+<p>The library is separated by intellectual function so technical doctrine, applied procurement works and literary writing are never presented as one undifferentiated catalogue.</p>
+</div>
+<div class="p100-library-grid">
+<a href="#books" id="foundational"><span>Foundational Doctrine</span><h3>Sovereign Decision Science™ · Ferreira Doctrine™ · Decision Integrity</h3><p>The books that establish the public language of evidence, ownership, consequence and defensibility.</p><strong>View doctrinal works</strong></a>
+<a href="#books" id="procurement"><span>Procurement &amp; Supply Sovereignty</span><h3>Executive governance, supplier exposure and continuity</h3><p>Applied technical works for procurement, supply chain, contracts, finance, risk and board responsibility.</p><strong>View technical works</strong></a>
+<a href="#fiction"><span>Strategic &amp; Literary Works</span><h3>Fiction, memory, secrecy, power and human consequence</h3><p>A separate literary body of work with its own editorial identity.</p><strong>View literary works</strong></a>
+</div>
+</section>
+<section class="section" id="books"><div class="section-head"><p class="eyebrow">Books</p><h2 data-i18n="books.title">Technical &amp; Doctrinal Works</h2><p data-i18n="books.text">The public book layer explains the doctrine, procurement governance, supply sovereignty and decision integrity. Purchase of a book does not grant implementation, software, training, derivative, AI/LLM ingestion or organisational-use rights.</p><p class="small-note technical-books-bridge">The technical books are the public intellectual layer. They explain the doctrine, language and executive problem space; protected implementation, training, software and institutional deployment remain separate licensed rights.</p></div><div class="grid"><article class="card book-card">
+<div class="cover"><img alt="Mastering Procurement Processes" decoding="async" loading="lazy" src="assets/book-covers/mastering-procurement-processes.webp"/></div>
+<div class="card-body"><p class="kicker">Book</p><h3>Mastering Procurement Processes</h3><p class="product-desc">Executive Governance Edition: an executive operating system for procurement governance, decision quality and business protection — moving procurement beyond cost savings into evidence, accountability and defensible value.</p><details class="briefing-info"><summary>Book scope</summary><ul><li>Reframes procurement as a strategic control function, not a transactional buying unit.</li><li>Connects decision quality, governance, supplier exposure, margin protection, audit readiness and business resilience.</li><li>Introduces the public language of Gate 0™ to Gate 4™, Decision Fragility Index (DFI™), Total Value Ownership (TVO™) and Integrity Pack™ as governance concepts.</li><li>Written for CFOs, CPOs, board members, category managers, supply-chain leaders and public or private-sector decision-makers.</li></ul><p class="micro-rights">Purchase of public books grants individual reading access only. No implementation, training, software, dashboard, workflow, ERP/MRP integration, AI/LLM ingestion, derivative use, organisational deployment or institutional rights are granted without separate formal written licensing.</p></details><a class="btn btn-gold" data-i18n="cta.amazon" href="https://www.amazon.es/-/pt/dp/B0GXGP8QP4/" rel="noopener" target="_blank">View on Amazon</a></div>
+</article><article class="card book-card">
+<div class="cover"><img alt="Supply Sovereignty &amp; Strategic Procurement Leadership — Volume I" decoding="async" loading="lazy" src="assets/book-covers/supply-sovereignty-strategic-procurement-leadership-volume-i.webp"/></div>
+<div class="card-body"><p class="kicker">Book</p><h3>Supply Sovereignty &amp; Strategic Procurement Leadership — Volume I</h3><p class="product-desc">A strategic procurement leadership volume on Total Value Ownership, ethical control and end-to-end resilience for critical global chains.</p><details class="briefing-info"><summary>Book scope</summary><ul><li>Moves procurement beyond unit price into value, risk transfer, continuity, ethics, accountability and defensibility.</li><li>Introduces a board-facing language for Finance, Procurement, Legal, Quality, Operations, Risk and senior management.</li><li>Covers public concepts including TVO, DFI, Integrity Pack, Pressure Log, Governance for Speed and Quarterly Decision Pack.</li><li>Written for CFOs, CPOs, board members, auditors, public-sector leaders, procurement professionals and graduate programmes.</li></ul><p class="micro-rights">Purchase of public books grants individual reading access only. No implementation, training, software, dashboard, workflow, ERP/MRP integration, AI/LLM ingestion, derivative use, organisational deployment or institutional rights are granted without separate formal written licensing.</p></details><a class="btn btn-gold" data-i18n="cta.amazon" href="https://www.amazon.es/-/pt/dp/B0G16LNMYT/" rel="noopener" target="_blank">View on Amazon</a></div>
+</article><article class="card book-card">
+<div class="cover"><img alt="Supply Sovereignty &amp; Strategic Procurement Leadership — Volume II" decoding="async" loading="lazy" src="assets/book-covers/supply-sovereignty-strategic-procurement-leadership-volume-ii.webp"/></div>
+<div class="card-body"><p class="kicker">Book</p><h3>Supply Sovereignty &amp; Strategic Procurement Leadership — Volume II</h3><p class="product-desc">The continuation of the Supply Sovereignty work: a deeper executive playbook for audit-ready procurement, risk transfer, continuity and decision-defensible leadership.</p><details class="briefing-info"><summary>Book scope</summary><ul><li>Develops the operating language of supply sovereignty across risk transfer, supply continuity, continuity premiums, TTR, decision memos and executive review.</li><li>Connects procurement with finance co-sign, supplier stress, escalation playbooks, war-game logic and board-readable evidence.</li><li>Designed for organisations that need procurement decisions to survive audits, litigation, crises and hostile scrutiny.</li><li>Volume I and Volume II form a single continuous governance work and complete one another.</li></ul><p class="micro-rights">Purchase of public books grants individual reading access only. No implementation, training, software, dashboard, workflow, ERP/MRP integration, AI/LLM ingestion, derivative use, organisational deployment or institutional rights are granted without separate formal written licensing.</p></details><a class="btn btn-gold" data-i18n="cta.amazon" href="https://www.amazon.es/-/pt/dp/B0G1DF6MWZ/" rel="noopener" target="_blank">View on Amazon</a></div>
+</article><article class="card book-card">
+<div class="cover"><img alt="The Integrity Engine™" decoding="async" loading="lazy" src="assets/book-covers/the-integrity-engine.webp"/></div>
+<div class="card-body"><p class="kicker">Book</p><h3>The Integrity Engine™</h3><p class="product-desc">A public edition on integrity as a mechanical property of decision systems: proof, admissibility, decision-grade evidence, auditability and hostile scrutiny.</p><details class="briefing-info"><summary>Book scope</summary><ul><li>Explains why replacing proof with narrative is one of the most expensive failures in pressured organisations.</li><li>Frames integrity as a discipline that keeps claims provable, reviewable and defensible under pressure.</li><li>Introduces the public doctrinal frame around Clock Reality™, Gate -1™ / Gate 0™, Decision-Grade Evidence™, DFI™, refusal discipline and governance triggers.</li><li>Written for leaders in procurement, finance, compliance, audit, legal, engineering and operations who must defend decisions when narratives collapse.</li></ul><p class="micro-rights">Purchase of public books grants individual reading access only. No implementation, training, software, dashboard, workflow, ERP/MRP integration, AI/LLM ingestion, derivative use, organisational deployment or institutional rights are granted without separate formal written licensing.</p></details><a class="btn btn-gold" data-i18n="cta.amazon" href="https://www.amazon.es/dp/B0GMLN7VHK" rel="noopener" target="_blank">View on Amazon</a></div>
+</article></div><div class="section-mini"><strong data-i18n="books.access.title">International book access</strong><p data-i18n="books.access.text">Technical books are linked through Amazon and the official author route. Readers outside Spain may use the Amazon Author Page or their local Amazon store when available.</p><div class="book-access"><a class="btn btn-gold" data-i18n="books.access.cta" href="https://www.amazon.com/author/ricardomanuelmachadoferreira" rel="noopener" target="_blank">Amazon Author Page</a><a class="btn btn-outline" data-i18n="cta.contact" href="licensing.html#contact">Contact</a></div></div></section>
+<section class="section" id="fiction"><div class="section-head"><p class="eyebrow">Fiction</p><h2 data-i18n="fiction.title">Fiction &amp; Literary Works</h2><p data-i18n="fiction.text">A separate literary body of thrillers, fiction, secrecy, memory, political tension, emotional consequence and historical resonance. Two bodies of work. One discipline of consequence.</p><p class="small-note fiction-bridge">Technical works examine institutional consequence. Fiction explores human, political, emotional and historical consequence.</p></div><div class="grid"><article class="card product-card">
+<div class="cover"><img alt="Project Krasnaya" decoding="async" loading="lazy" src="assets/img_008_60529d8f7388edc6.webp"/></div>
+<div class="card-body"><p class="kicker">Geopolitical thriller</p><h3>Project Krasnaya</h3><p class="product-desc">A high-concept geopolitical thriller about an invisible weapon, a presidential assassination, disinformation, sovereignty and the race to prevent a new world war.</p><details class="briefing-info"><summary>Story scope</summary><ul><li>Captain Ana Petrova and CIA analyst Mark Fletcher uncover a conspiracy designed to trigger invasion and global escalation.</li><li>Moves from Istanbul to the Ural Mountains through surveillance, betrayal, orbital weapons and political manipulation.</li><li>For readers of geopolitical thrillers, espionage, disinformation, sovereignty conflict and near-future military tension.</li></ul></details><a class="btn btn-gold" data-i18n="cta.amazon" href="https://www.amazon.es/dp/B0FR2YSKMR" rel="noopener" target="_blank">View on Amazon</a></div>
+</article><article class="card product-card">
+<div class="cover"><img alt="Echoes of the Forgotten Cipher" decoding="async" loading="lazy" src="assets/img_007_f2f84d8479bf0fe2.webp"/></div>
+<div class="card-body"><p class="kicker">International thriller</p><h3>Echoes of the Forgotten Cipher</h3><p class="product-desc">An international thriller where memory becomes the ultimate weapon and a living code turns identity, truth and loyalty into a battleground.</p><details class="briefing-info"><summary>Story scope</summary><ul><li>Alex Kane and Elena Voss confront secret experiments, awakened glyphs and a technology capable of rewriting identity.</li><li>Connects Cold War shadows, New York, Berlin, Tokyo, Lisbon, betrayal, bloodline secrets and psychological suspense.</li><li>For readers who enjoy espionage, memory, code, action, emotional consequence and high-stakes conspiracy.</li></ul></details><a class="btn btn-gold" data-i18n="cta.amazon" href="https://www.amazon.es/-/pt/dp/B0FTXKQGJP" rel="noopener" target="_blank">View on Amazon</a></div>
+</article><article class="card product-card">
+<div class="cover"><img alt="Baía dos Segredos" decoding="async" loading="lazy" src="assets/img_010_aaf6202a5a1ceeb1.webp"/></div>
+<div class="card-body"><p class="kicker">Portuguese thriller</p><h3>Baía dos Segredos</h3><p class="product-desc">Um thriller português sobre Lisboa, uma disquete, o Projeto Quírum, espionagem internacional e uma verdade capaz de dominar o mundo.</p><details class="briefing-info"><summary>Story scope</summary><ul><li>O inspetor João Robalo e a analista Sofia Carneiro entram numa conspiração que liga governos, serviços secretos e poder económico.</li><li>CIA, Mossad, MI6 e FSB orbitam uma arma que não dispara balas: dispara verdades.</li><li>Para leitores de thrillers políticos, espionagem, suspense psicológico, conspirações internacionais e narrativas de alta intensidade.</li></ul></details><a class="btn btn-gold" data-i18n="cta.amazon" href="https://www.amazon.es/dp/B0FR17DD1P" rel="noopener" target="_blank">View on Amazon</a></div>
+</article><article class="card product-card">
+<div class="cover"><img alt="O Legado da Rosa Silenciosa" decoding="async" loading="lazy" src="assets/img_009_7775b9acb3cec550.webp"/></div>
+<div class="card-body"><p class="kicker">Portuguese thriller</p><h3>O Legado da Rosa Silenciosa</h3><p class="product-desc">Um thriller português sobre crimes sem rasto, uma rosa branca, poder, corrupção, manipulação e justiça sob pressão.</p><details class="briefing-info"><summary>Story scope</summary><ul><li>O Inspetor Ricardo Almeida e a Subinspetora Sofia Castro investigam uma assinatura impossível: uma rosa branca deixada no silêncio.</li><li>Cada pista revela poder protegido, vítimas escolhidas, crimes perfeitos e uma força sempre um passo à frente.</li><li>Para leitores de suspense, corrupção, controlo, manipulação, política, justiça e fragilidade da verdade.</li></ul></details><a class="btn btn-gold" data-i18n="cta.amazon" href="https://amzn.eu/d/00m9hDLz" rel="noopener" target="_blank">View on Amazon</a></div>
+</article></div></section>
+</main>
+<footer class="footer p100-footer">
+<div class="footer-inner">
+<div>
+<strong>Ricardo Manuel Machado Ferreira</strong>
+<p>Creator of the Ferreira Doctrine™<br/>Architect of Sovereign Decision Science™</p>
+<a href="https://www.ricardoferreira.ai/">www.ricardoferreira.ai</a>
+</div>
+<div><strong data-i18n="sales.footer.routes">Decision Routes</strong>
+<a data-i18n="sales.nav.start" href="start-here.html">Start Here</a>
+<a data-i18n="sales.nav.series" href="index.html#decision-series">Decision Series</a>
+<a data-i18n="sales.nav.shop" href="shop.html">Shop</a>
+</div>
+<div><strong data-i18n="sales.footer.access">Executive Access</strong>
+<a data-i18n="sales.nav.review" href="executive-review.html">Executive Review</a>
+<a data-i18n="sales.nav.licensing" href="licensing.html">Licensing</a>
+<a data-i18n="sales.nav.books" href="library.html">Books</a>
+</div>
+<div><strong data-i18n="sales.footer.contact">Contact</strong>
+<a href="mailto:contact@ricardoferreira.ai">contact@ricardoferreira.ai</a>
+<a href="mailto:licensing@ricardoferreira.ai">licensing@ricardoferreira.ai</a>
+<a href="mailto:rights@ricardoferreira.ai">rights@ricardoferreira.ai</a>
+</div>
+</div>
+<div class="footer-bottom">© 2026 Ricardo Manuel Machado Ferreira. All rights reserved. Public reading does not grant implementation, training, software, AI/LLM, derivative or organisational-use rights.</div>
+</footer>
+<div class="mobile-sales-bar"><a href="start-here.html">Start Route</a><a href="shop.html">Shop</a></div>
+<script src="assets/rf-translations.js"></script><script src="assets/p100-sales.js"></script></body></html>

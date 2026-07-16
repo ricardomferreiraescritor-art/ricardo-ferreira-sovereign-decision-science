@@ -1,0 +1,13 @@
+P100 SALES CHANNEL — QA REPORT
+HTML pages: 42
+Product detail pages generated from current catalogue: 30
+Unique Payhip product links retained: 35
+Generated product covers: 31
+Generated book covers: 4
+Broken local references: 4
+
+ERRORS:
+- library.html: missing src assets/img_008_60529d8f7388edc6.webp
+- library.html: missing src assets/img_007_f2f84d8479bf0fe2.webp
+- library.html: missing src assets/img_010_aaf6202a5a1ceeb1.webp
+- library.html: missing src assets/img_009_7775b9acb3cec550.webp

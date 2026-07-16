@@ -1,0 +1,109 @@
+
+(function(){
+  // Smooth reveal for primary commercial sections.
+  const reveal = document.querySelectorAll('.p100-problem-card,.p100-route-step,.series-product,.p100-access-grid article,.p100-library-grid a');
+  if('IntersectionObserver' in window){
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){entry.target.classList.add('p100-visible');io.unobserve(entry.target);}
+      });
+    },{threshold:.08});
+    reveal.forEach(el=>{el.classList.add('p100-reveal');io.observe(el);});
+  }
+
+  // Start Here commercial routing.
+  const quiz = document.querySelector('[data-p100-quiz]');
+  if(quiz){
+    const state = {};
+    quiz.querySelectorAll('[data-question]').forEach(row=>{
+      row.querySelectorAll('button[data-answer]').forEach(btn=>{
+        btn.addEventListener('click',()=>{
+          row.querySelectorAll('button[data-answer]').forEach(x=>x.classList.remove('active'));
+          btn.classList.add('active');
+          state[row.dataset.question] = btn.dataset.answer === 'yes';
+        });
+      });
+    });
+    const result = document.getElementById('p100-recommendation');
+    const title = document.getElementById('p100-rec-title');
+    const text = document.getElementById('p100-rec-text');
+    const primary = document.getElementById('p100-rec-primary');
+    const secondary = document.getElementById('p100-rec-secondary');
+    const routes = {
+      premium:{title:'Executive Decision Defensibility Review',text:'A defined decision already carries material accountability exposure. Use written executive judgement rather than another general briefing.',href:'executive-review.html',cta:'Request the Review'},
+      evidence:{title:'The Public Decision Record Pack',text:'The evidence supporting the decision appears fragmented. Build a decision-grade record before later scrutiny depends on memory.',href:'shop.html#product-the-public-decision-record-pack',cta:'Open the Evidence Route'},
+      supplier:{title:'Brief 03 — Supplier Integrity',text:'The immediate exposure concerns future supplier dependability. Begin by separating historical performance from decision-grade integrity.',href:'supplier-performance-is-not-supplier-integrity.html',cta:'Start Brief 03'},
+      fragility:{title:'Brief 02 — Decision Fragility',text:'The decision depends heavily on assumptions, authority or concentrated dependencies. Begin by testing structural fragility.',href:'what-risk-registers-cannot-see.html',cta:'Start Brief 02'},
+      value:{title:'Brief 01 — Defensible Value',text:'The concern begins with value. Start by testing what remains after dependency, disruption, recovery and scrutiny are included.',href:'why-tco-stops-too-early.html',cta:'Start Brief 01'},
+      bundle:{title:'The Decision Blind Spot Starter Bundle',text:'The exposure crosses value, fragility and supplier integrity. Use the complete connected entry route rather than selecting one isolated briefing.',href:'decision-blind-spot-starter-bundle.html',cta:'Get the Complete Route'}
+    };
+    quiz.addEventListener('submit',e=>{
+      e.preventDefault();
+      const yesCount = Object.values(state).filter(Boolean).length;
+      let key='bundle';
+      if(state.accountability) key='premium';
+      else if(state.evidence) key='evidence';
+      else if(state.supplier) key='supplier';
+      else if(state.assumptions) key='fragility';
+      else if(state.value) key='value';
+      else if(yesCount===0) key='bundle';
+      const r=routes[key];
+      title.textContent=r.title;text.textContent=r.text;primary.href=r.href;primary.textContent=r.cta;
+      secondary.href='decision-blind-spot-starter-bundle.html';
+      result.classList.add('visible');
+      result.scrollIntoView({behavior:'smooth',block:'nearest'});
+    });
+  }
+
+  // Store filtering by price and route.
+  const shop = document.querySelector('[data-p100-shop]');
+  if(shop){
+    let activePrice='all', activeRoute='all';
+    const cards=[...shop.querySelectorAll('.product-card')];
+    const noResults=document.getElementById('p100-no-results');
+    function apply(){
+      let shown=0;
+      cards.forEach(card=>{
+        const price=parseFloat(card.dataset.price||'0');
+        const tier=card.dataset.tier||'';
+        const routes=(card.dataset.route||'').split(' ');
+        const priceMatch =
+          activePrice==='all' ||
+          (activePrice==='under10' && price>0 && price<10) ||
+          (activePrice==='starter' && price>=10 && price<50 && tier!=='premium') ||
+          (activePrice==='architecture' && price>=69 && price<1000) ||
+          (activePrice==='premium' && (tier==='premium' || price>=1000));
+        const routeMatch = activeRoute==='all' || routes.includes(activeRoute);
+        const show=priceMatch && routeMatch;
+        card.style.display=show?'':'none';
+        if(show) shown++;
+      });
+      if(noResults) noResults.classList.toggle('visible',shown===0);
+    }
+    shop.querySelectorAll('[data-filter-price]').forEach(btn=>btn.addEventListener('click',()=>{
+      activePrice=btn.dataset.filterPrice;
+      shop.querySelectorAll('[data-filter-price]').forEach(x=>x.classList.toggle('active',x===btn));
+      apply();
+    }));
+    shop.querySelectorAll('[data-filter-route]').forEach(btn=>btn.addEventListener('click',()=>{
+      activeRoute=btn.dataset.filterRoute;
+      shop.querySelectorAll('[data-filter-route]').forEach(x=>x.classList.toggle('active',x===btn));
+      apply();
+    }));
+    const params=new URLSearchParams(location.search);
+    const price=params.get('price'), route=params.get('route');
+    if(price && shop.querySelector(`[data-filter-price="${price}"]`)) shop.querySelector(`[data-filter-price="${price}"]`).click();
+    if(route && shop.querySelector(`[data-filter-route="${route}"]`)) shop.querySelector(`[data-filter-route="${route}"]`).click();
+    apply();
+  }
+
+  // Close mobile navigation on external page load or resize.
+  window.addEventListener('resize',()=>{
+    if(window.innerWidth>1250){
+      const nav=document.getElementById('site-nav');
+      const toggle=document.querySelector('.menu-toggle');
+      if(nav) nav.classList.remove('open');
+      if(toggle) toggle.setAttribute('aria-expanded','false');
+    }
+  });
+})();
